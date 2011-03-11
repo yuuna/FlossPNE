@@ -1,6 +1,6 @@
 Member:
   first_member:
-    name: "OpenPNE君"
+    name: "FlossPNEさん"
     is_active: 1
 
 MemberProfile:
@@ -11,7 +11,7 @@ MemberProfile:
     Profile: profile_sex
 
   first_member_profile_birthday:
-    value: "1988-04-23"
+    value: "2005-01-10"
     public_flag: 1
     Member: first_member
     Profile: profile_birthday
