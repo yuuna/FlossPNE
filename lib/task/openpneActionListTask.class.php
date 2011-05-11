@@ -103,6 +103,7 @@ EOF;
       }
     }
 
+    $i = 0;
     foreach ($actionList as $item)
     {
       if (preg_match('#.*plugins/([^/]+Plugin)/.*?$#', $item[0], $matches))
@@ -127,13 +128,14 @@ EOF;
           $requirements = $route->getRequirements();
           $method = isset($requirements['sf_method']) ? strtoupper(is_array($requirements['sf_method']) ? implode(', ', $requirements['sf_method']) : $requirements['sf_method']) : 'ANY';
 
-          echo implode("\t", array($item[1], $plugin, $name, $pattern, $method)).PHP_EOL;
+          echo implode("\t", array($i, $item[1], $plugin, $name, $pattern, $method)).PHP_EOL;
         }
       }
       else
       {
-        echo implode("\t", array($item[1], $plugin)).PHP_EOL;
+        echo implode("\t", array($i, $item[1], $plugin)).PHP_EOL;
       }
+      $i++;
     }
   }
 
