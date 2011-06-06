@@ -1,4 +1,4 @@
-<form action="/sf/member/login/authMode/MailAddress" method="post"
+<form action="<?php echo url_for('member/login?authMode=MailAddress') ?>" method="post"
   data-ajax="false" >
 
 <div data-role="fieldcontain">
