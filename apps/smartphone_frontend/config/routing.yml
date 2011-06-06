@@ -1,0 +1,50 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: member, action: home }
+
+member_index:
+  url:   /member
+  param: { module: member, action: home }
+
+login:
+  url: /member/login/*
+  param: { module: member, action: login }
+
+member_logout:
+  url: /logout
+  param: { module: member, action: logout }
+
+
+friend_list:
+  url: /friend/list
+  param: { module: friend, action: list }
+
+
+error:
+  url: /default/error
+  param: { module: default, action: error }
+
+
+member_profile:
+  url:   /member/:id
+  class:   opDynamicAclRoute
+  options: { model: Member, type: object, privilege: view }
+  param:   { module: member, action: profile }
+  requirements:
+    id:        \d+
+    sf_method: [get]
+
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+#
+#default:
+#  url:   /:module/:action/*
+
