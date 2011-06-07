@@ -17,25 +17,15 @@
  */
 class opSmartphone
 {
-  protected static
-    $instance = null,
-    $user_agent = null;
+  protected static $instance = null;
 
   protected function __construct()
   {
-    if (isset($_SERVER['HTTP_USER_AGENT']))
-    {
-      $user_agent = $_SERVER['HTTP_USER_AGENT'];
-    }
-    else
-    {
-      $user_agent = "";
-    }
   }
 
   public static function getInstance()
   {
-    if (is_null(self::$user_agent))
+    if (is_null(self::$instance))
     {
       $className = __CLASS__;
       self::$instance = new $className();
@@ -46,40 +36,11 @@ class opSmartphone
 
   public function isSmartphone()
   {
-    if ($this->isIPhone() || $this->isAndroid())
+    if (preg_match('/(iPhone)|(iPod)|(BlackBerry)|(Windows Phone)|(Symbian)|(Android)/', $_SERVER['HTTP_USER_AGENT']))
     {
       return true;
     }
 
     return false;
-  }
-
-  public function isIPhone()
-  {
-    if (strpos(self::$user_agent, 'iPhone') !== false)
-    {
-      return true;
-    }
-
-    return false;
-  }
-
-  public function isAndroid()
-  {
-    if (strpos(self::$user_agent, 'Android') !== false)
-    {
-      return true;
-    }
-
-    return false;
-  }
-
-  public function isCookie()
-  {
-    return $this->isSmartphone();
-  }
-
-  protected function __clone()
-  {
   }
 }
