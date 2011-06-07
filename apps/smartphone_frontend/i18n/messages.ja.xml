@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Home</source>
+        <target>ホーム</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>What's up?</source>
+        <target>新着情報</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Messages</source>
+        <target>メッセージ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Activities</source>
+        <target>アクティビティ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Diaries</source>
+        <target>日記</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Ranking</source>
+        <target>ランキング</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Pageview logs</source>
+        <target>あしあと</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>My</source>
+        <target>マイ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Friends</source>
+        <target>フレンド</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Communities</source>
+        <target>コミュニティ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Diaries</source>
+        <target>日記</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Favorites</source>
+        <target>お気に入り</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Profile</source>
+        <target>プロフィール</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Search</source>
+        <target>検索</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Member search</source>
+        <target>メンバー検索</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community search</source>
+        <target>コミュニティ検索</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Misc</source>
+        <target>その他</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Settings</source>
+        <target>設定変更</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Logout</source>
+        <target>ログアウト</target>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>
