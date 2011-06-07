@@ -11,6 +11,6 @@
   <?php include_javascripts() ?>
 </head>
 <body>
-<div data-role="page" data-url="<?php echo $_SERVER['REQUEST_URI'] ?>"><?php echo $sf_content ?></div>
+<?php echo $sf_content ?>
 </body>
 </html>

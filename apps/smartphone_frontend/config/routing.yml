@@ -105,6 +105,11 @@ diary_new:
   param: { module: diary, action: new }
 
 
+confirmation_list:
+  url:   /confirmation
+  param: { module: confirmation, action: list }
+
+
 # generic rules
 # please, remove them by adding more specific rules
 #default_index:
