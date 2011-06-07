@@ -3,15 +3,66 @@
   <a data-rel="back" href="#">戻る</a>
 </div>
 
-<?php echo op_image_tag_sf_image($member->getImageFileName(), array('size' => '120x120')) ?><br />
-#<?php echo $member->getId() ?>
-<hr />
-<dl>
+<div data-role="content">
+  <?php echo op_image_tag_sf_image($member->getImageFileName(), array('size' => '120x120')) ?><br />
+  <!-- #<?php echo $member->getId() ?> -->
+
+  <h3><?php echo __('Profile') ?></h3>
+
 <?php
-foreach ($member->getProfiles() as $profile)
+foreach ($member->getProfiles(true) as $profile)
 {
-  printf("<dt><b>%s</b></dt>", $profile->getName());
-  printf("<dd><pre>%s</pre></dd>\n", $profile->getValue());
+  $caption = $profile->getProfile()->getCaption();
+  if ($profile->getProfile()->isPreset())
+  {
+    $presetConfig = $profile->getProfile()->getPresetConfig();
+    $caption = __($presetConfig['Caption']);
+  }
+
+  $profileValue = (string)$profile;
+  if ('' === $profileValue)
+  {
+    continue;
+  }
+
+  if ($profile->getFormType() === 'textarea')
+  {
+    $profileValue = op_auto_link_text(nl2br($profileValue));
+  }
+
+  if ($profile->getProfile()->isPreset())
+  {
+    if ($profile->getFormType() === 'country_select')
+    {
+      $profileValue = $culture->getCountry($profileValue);
+    }
+    elseif ('op_preset_birthday' === $profile->getName())
+    {
+      $profileValue = op_format_date($profileValue, 'XShortDateJa');
+    }
+
+    $profileValue = __($profileValue);
+  }
+
+#  if ($member->getId() == $sf_user->getMemberId() && $profile->getPublicFlag() == ProfileTable::PUBLIC_FLAG_FRIEND)
+#  {
+#    $profileValue .= ' ('.__('Only Open to %my_friend%', array(
+#      '%my_friend%' => $op_term['my_friend']->titleize()->pluralize(),
+#    )).')';
+#  }
+#  elseif ($member->getId() == $sf_user->getMemberId() && $profile->getPublicFlag() == ProfileTable::PUBLIC_FLAG_WEB)
+#  {
+#    $profileValue .= ' ('.__('All Users on the Web').')';
+#  }
+  $list[$caption] = $profileValue;
 }
 ?>
-</dl>
+
+<?php foreach ($list as $k => $v): ?>
+  <hr/>
+  <b><?php echo __($k) ?></b><br />
+  <?php echo $v ?><br />
+<?php endforeach ?>
+<hr/>
+
+</div>
