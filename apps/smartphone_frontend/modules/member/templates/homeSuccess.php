@@ -99,7 +99,7 @@
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
       <li>(未)<?php echo link_to(__('Favorites'), 'favorite/list') ?></li>
-      <li>(未)<?php echo link_to(__('Pageview logs'), 'ashiato/list') ?></li>
+      <li><?php echo link_to(__('Pageview logs'), 'ashiato/list') ?></li>
       <li>(未)<?php echo link_to(__('Ranking'), 'ranking/index') ?></li>
       <li><?php echo link_to(__('My Profile'), '@member_profile_mine') ?></li>
       <li>(未)<?php echo link_to(__('Settings'), 'member/config') ?></li>
