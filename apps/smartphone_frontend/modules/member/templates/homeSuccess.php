@@ -7,7 +7,7 @@
   <ul data-role="listview" data-inset="true">
     <li>(x)<?php echo link_to(__('Messages'), 'message/index') ?></li>
     <li>(o)<?php echo link_to(__('Activities'), 'friend/showActivity') ?></li>
-    <li>(x)<?php echo link_to(__('Diaries'), 'diary/list') ?></li>
+    <li>(o)<?php echo link_to(__('Diaries'), 'diary/list') ?></li>
     <li>(x)<?php echo link_to(__('Ranking'), 'ranking/index') ?></li>
     <li>(x)<?php echo link_to(__('Pageview logs'), 'ashiato/list') ?></li>
   </ul>
