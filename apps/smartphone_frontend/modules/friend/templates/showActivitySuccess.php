@@ -1,5 +1,6 @@
 <div data-role="header" data-theme="b">
   <h1><?php echo __('friend activity') ?></h1>
+  <a data-rel="back" href="#">戻る</a>
 </div>
 
 <div data-role="content">
