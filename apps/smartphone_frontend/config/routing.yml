@@ -47,16 +47,59 @@ member_profile_mine:
 
 
 ########
+#diary:
+#  class: opDiaryPluginFrontendRouteCollection
+#  options: { name: diary }
+
+diary_index:
+  url: /diary
+  param: { module: diary, action: index }
+
+diary_search:
+  url: /diary/search
+  param: { module: diary, action: search }
+# + extra_parameters_as_query_string: true
+
+diary_list:
+  url: /diary/list
+  param: { module: diary, action: list }
+# + extra_parameters_as_query_string: true
+
+# diary_list_member_....
+
+diary_list_member:
+  url: /diary/listMember/:id
+  class: sfDoctrineRoute
+  param: { module: diary, action: listMember }
+  options: { model: Member, type: object, privilege: view }
+  requirements:
+    id:        \d+
+    sf_method: [get]
+# + extra_parameters_as_query_string: true
+
+diary_list_mine:
+  url: /diary/listMember
+  param: { module: diary, action: listMember }
+# + extra_parameters_as_query_string: true
+
+diary_list_friend:
+  url: /diary/listFriend
+  param: { module: diary, action: listFriend }
+# + extra_parameters_as_query_string: true
+
+diary_show:
+  url: /diary/:id
+  class: sfDoctrineRoute
+  param: { module: diary, action: show }
+  options: { model: Diary, type: object, privilege: view }
+  requirements:
+    id:        \d+
+    sf_method: [get]
+
 diary_new:
   url: /diary/new
   param: { module: diary, action: new }
 
-diary_listMember:
-  url: /diary/listMember/:id
-  param: { module: diary, action: listMember }
-  requirements:
-    id:        \d+
-    sf_method: [get]
 
 # generic rules
 # please, remove them by adding more specific rules
