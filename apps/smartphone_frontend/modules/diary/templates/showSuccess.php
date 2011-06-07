@@ -2,7 +2,7 @@
 
 <div data-role="header" data-theme="b">
   <h1><?php echo __('Diary of %1%', array('%1%' => $member->name)) ?></h1>
-  <a data-rel="back" href="#">戻る</a>
+  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
 </div>
 
 <!-- <p class="public">(<?#php echo $diary->getPublicFlagLabel() ?>)</p></div> -->
@@ -46,17 +46,17 @@
 
 <!--
 <?#php if ($myMemberId): ?>
-<?#php
-$form->getWidget('body')->setAttribute('rows', 8);
-$form->getWidget('body')->setAttribute('cols', 40);
-
-op_include_form('formDiaryComment', $form, array(
-  'title' => __('Post a diary comment'),
-  'url' => url_for('@diary_comment_create?id='.$diary->id),
-  'button' => __('Save'),
-  'isMultipart' => true,
-  'body' => $diary->is_open ? __('Your comment is visible to all users on the Web.') : null,
-));
+<?php
+#$form->getWidget('body')->setAttribute('rows', 8);
+#$form->getWidget('body')->setAttribute('cols', 40);
+#
+#op_include_form('formDiaryComment', $form, array(
+#  'title' => __('Post a diary comment'),
+#  'url' => url_for('@diary_comment_create?id='.$diary->id),
+#  'button' => __('Save'),
+#  'isMultipart' => true,
+#  'body' => $diary->is_open ? __('Your comment is visible to all users on the Web.') : null,
+#));
 ?>
 <?#php endif; ?>
 -->

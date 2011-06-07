@@ -15,7 +15,7 @@ else
 
 <div data-role="header" data-theme="b">
 <h1><?php echo $title ? $title : __('diary list') ?></h1>
-  <a data-rel="back" href="#">戻る</a>
+  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
 </div>
 
 <!--
