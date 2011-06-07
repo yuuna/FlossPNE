@@ -1,0 +1,31 @@
+.ui-li-heading {
+  margin: 0;
+  font-size: 14px;
+}
+.ui-li-desc {
+  margin: 0;
+  overflow: visible;
+  white-space: normal;
+  font-size: 14px;
+}
+.ui-li-aside {
+  font-size: 12px;
+}
+.ui-li-thumb {
+  top: 7px;
+  left: 5px;
+  max-width: 48px;
+  max-height: 48px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.ui-li-static.ui-li-has-thumb {
+  min-height: 55px;
+  padding-left: 58px;
+}
+.ui-li-static.ui-li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
