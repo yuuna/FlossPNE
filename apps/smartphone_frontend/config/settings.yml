@@ -3,12 +3,11 @@ prod:
     error_reporting:        <?php echo (E_ALL)."\n" ?>
     web_debug:              true
     cache:                  false
-    no_script_name:         false
+#    cache:                  on
+    no_script_name:         true
     etag:                   false
-#    no_script_name:         true
 #    logging_enabled:        false
 #    check_lock:             true
-#    cache:                  on
 #  .actions:
 #    error_404_action:       error
 #    module_disabled_action: error
