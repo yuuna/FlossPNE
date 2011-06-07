@@ -41,6 +41,10 @@ member_profile:
     id:        \d+
     sf_method: [get]
 
+member_profile_mine:
+  url:   /member/profile
+  param:   { module: member, action: profile }
+
 
 ########
 diary_new:
@@ -60,6 +64,6 @@ diary_listMember:
 #  url:   /:module
 #  param: { action: index }
 #
-#default:
-#  url:   /:module/:action/*
+default:
+  url:   /:module/:action/*
 

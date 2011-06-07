@@ -20,7 +20,7 @@ require_once(dirname(__FILE__).'/../lib/util/opSmartphone.class.php');
 require_once(dirname(__FILE__).'/../lib/util/opMobileUserAgent.class.php');
 
 $is_smartphone = preg_match('/(iPhone)|(iPod)|(BlackBerry)|(Windows Phone)|(Symbian)|(Android)/', $_SERVER['HTTP_USER_AGENT']);
-#$is_smartphone = true; //opSmartphone::getInstance()->isSmartphone();
+$is_smartphone = true; // for development
 
 $is_mobile = !opMobileUserAgent::getInstance()->getMobile()->isNonMobile();
 
