@@ -9,12 +9,11 @@
     <li>
       <!-- a href="<?php echo url_for('@member_profile?id='.$activityData->Member->getId()) ?>" -->
       <?php echo op_image_tag_sf_image($activityData->Member->getImageFileName(), array('size' => '76x76')) ?>
+      <p class="ui-li-aside"><?php echo substr($activityData->getCreatedAt(),11) ?></p>
       <h4><?php echo $activityData->Member->getName() ?>:</h4>
-      <p><?php echo $activityData->getBody() ?>
-         [<?php echo substr($activityData->getCreatedAt(),11) ?>]</p>
+      <p><?php echo $activityData->getBody() ?></p>
       <!-- /a -->
     </li>
   <?php endforeach ?>
   </ul>
 </div>
-
