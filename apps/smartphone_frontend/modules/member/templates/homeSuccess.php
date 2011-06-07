@@ -33,6 +33,7 @@
   <p><?php echo __('Misc') ?></p>
   <ul data-role="listview" data-inset="true">
     <li>(未)<?php echo link_to(__('Settings'), 'member/config') ?></li>
+    <li>(未)<?php echo link_to(__('Invite Friends'), '@member_invite') ?></li>
     <li><?php echo link_to(__('Logout'), '@member_logout') ?></li>
   </ul>
 

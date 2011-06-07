@@ -10,6 +10,10 @@ member_index:
   url:   /member
   param: { module: member, action: home }
 
+member_invite:
+  url:   /invite
+  param: { module: member, action: invite }
+
 login:
   url: /member/login/*
   param: { module: member, action: login }

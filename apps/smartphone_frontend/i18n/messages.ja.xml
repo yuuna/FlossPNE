@@ -87,6 +87,10 @@
         <target>設定変更</target>
       </trans-unit>
       <trans-unit id="">
+        <source>Invite Friends</source>
+        <target>友人を招待する</target>
+      </trans-unit>
+      <trans-unit id="">
         <source>Logout</source>
         <target>ログアウト</target>
       </trans-unit>
