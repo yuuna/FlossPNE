@@ -31,6 +31,14 @@
         <source>Pageview logs</source>
         <target>あしあと</target>
       </trans-unit>
+      <trans-unit id="">
+        <source>Recently Posted Community Topics</source>
+        <target>コミュニティ最新書き込み</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Recently Posted Community Events</source>
+        <target>コミュニティ最新イベント</target>
+      </trans-unit>
 
       <trans-unit id="">
         <source>My</source>

@@ -7,6 +7,8 @@
   <ul data-role="listview" data-inset="true">
     <li>(未)<?php echo link_to(__('Messages'), 'message/index') ?></li>
     <li><?php echo link_to(__('Activities'), 'friend/showActivity') ?></li>
+    <li>(未)<?php echo link_to(__('Recently Posted Community Topics'), 'communityTopic/recentlyTopicList') ?></li>
+    <li>(未)<?php echo link_to(__('Recently Posted Community Events'), 'communityEvent/recentlyEventList') ?></li>
     <li><?php echo link_to(__('Diaries'), 'diary/list') ?></li>
     <li>(未)<?php echo link_to(__('Ranking'), 'ranking/index') ?></li>
     <li>(未)<?php echo link_to(__('Pageview logs'), 'ashiato/list') ?></li>
