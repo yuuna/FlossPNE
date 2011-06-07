@@ -17,7 +17,7 @@
     <li>(o)<?php echo link_to(__('Friends'), 'friend/list') ?></li>
     <li>(x)<?php echo link_to(__('Communities'), 'community/joinList?id='.$memberId) ?></li>
     <li>(x)<?php echo link_to(__('Diaries'), 'diary/listMember?id='.$memberId) ?></li>
-    <li>(x)<?php echo link_to(__('Favorites'), 'diary/listMember?id='.$memberId) ?></li>
+    <li>(x)<?php echo link_to(__('Favorites'), 'favorite/list') ?></li>
 <!--<li><?php echo link_to(__('write a new'), 'diary/new') ?></li>-->
     <li>(o)<?php echo link_to(__('Profile'), '@member_profile_mine') ?></li>
   </ul>
