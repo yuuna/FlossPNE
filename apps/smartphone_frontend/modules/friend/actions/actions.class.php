@@ -28,4 +28,8 @@ class friendActions extends opFriendAction
 
     return parent::executeList($request);
   }
+
+#  public function executeShowActivity(sfWebRequest $request)
+#  {
+#  }
 }

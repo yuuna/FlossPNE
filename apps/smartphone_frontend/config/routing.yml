@@ -23,6 +23,9 @@ friend_list:
   url: /friend/list
   param: { module: friend, action: list }
 
+friend_showActivity:
+  url: /friend/showActivity
+  param: { module: friend, action: showActivity }
 
 error:
   url: /default/error
@@ -38,6 +41,18 @@ member_profile:
     id:        \d+
     sf_method: [get]
 
+
+########
+diary_new:
+  url: /diary/new
+  param: { module: diary, action: new }
+
+diary_listMember:
+  url: /diary/listMember/:id
+  param: { module: diary, action: listMember }
+  requirements:
+    id:        \d+
+    sf_method: [get]
 
 # generic rules
 # please, remove them by adding more specific rules
