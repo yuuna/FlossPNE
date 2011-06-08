@@ -21,6 +21,14 @@ pre { color: #06F; }
       2011年6月9日 Naoya Tozuka &lt;tozuka@tejimaya.com&gt;
       </p>
     </div>
+
+    <div data-role="collapsible" data-collapsed="true">
+      <h3>デモ環境</h3>
+      <p>
+      <a href="http://sf.inner.tejimaya.com/" target="_blank">http://sf.inner.tejimaya.com/</a> で、スマートフォンから inner にアクセスできます。（要innerアカウント）<br />
+      <br />
+      書き込んだ結果はinnerに反映されますのでご注意ください。</p>
+    </div>
     
     <div data-role="collapsible" data-collapsed="true">
       <h3>対応状況</h3>
