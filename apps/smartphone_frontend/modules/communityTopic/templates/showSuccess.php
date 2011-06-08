@@ -22,7 +22,25 @@
 <?php echo op_url_cmd(nl2br($communityTopic->getBody())) ?>
 <?php if ($communityTopic->isEditable($sf_user->getMemberId())): ?>
 <?php endif; ?>
-
   <hr />
 
+<?php
+$q = Doctrine::getTable('CommunityTopicComment')->createQuery()
+  ->where('community_topic_id = ?', $communityTopic->getId());
+$pager = new sfReversibleDoctrinePager('CommunityTopicComment');
+$pager->setQuery($q);
+$commentCount = $pager->getNbResults();
+?>
+  <div data-role="collapsible" data-collapsed="true">
+    <h3>コメント<!-- (<?php echo $commentCount ?>件) --></h3>
+    <ul data-role="listview">
+    <?php foreach ($pager->getResults() as $comment): ?>
+    <li><p class="ui-li-aside"><?php echo $comment->getCreatedAt() ?></p>
+        <?php echo op_image_tag_sf_image($comment->Member->getImageFileName(), array('size' => '76x76')) ?>
+        <h4><?php echo $comment->Member->getName() ?>:</h4>
+        <p><?php echo $comment->getBody() ?></p>
+    </li>
+    <?php endforeach ?>
+    </ul>
+  </div>
 </div>
