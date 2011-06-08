@@ -138,6 +138,10 @@ communityEvent_show:
     id:        \d+
     sf_method: [get]
 
+about:
+  url:   /about
+  param: { module: about, action: index }
+
 # generic rules
 # please, remove them by adding more specific rules
 #default_index:
