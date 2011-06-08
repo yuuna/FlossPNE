@@ -1,7 +1,9 @@
 <?php use_helper('opDiary'); ?>
 
+<?php $isMyDiaries = ($sf_user->getMemberId() === $member->id) ? true : false; ?>
+
 <div data-role="header" data-theme="b">
-<h1><?php echo __('My Diaries') ?></h1>
+  <h1><?php echo $isMyDiaries ? __('My Diaries') : ($member->getName().'さんの日記') ?></h1>
   <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
 </div>
 
@@ -11,11 +13,12 @@
   <?php foreach ($pager->getResults() as $diary): ?>
     <li>
       <a href="<?php echo url_for('diary_show', $diary) ?>">
-    <!--
-        <?php echo image_tag_sf_image($diary->Member->getImageFilename(), array('size' => '76x76')) ?>
-    -->
+        <?php if (!$isMyDiaries): ?>
+          <?php echo image_tag_sf_image($diary->Member->getImageFilename(), array('size' => '76x76')) ?>
+        <?php endif ?>
         <p class="ui-li-aside"><?php echo op_format_date($diary->created_at, 'XDateTimeJa') ?></p>
-        <h4><!-- <?php echo $diary->Member->name ?> :--><?php echo op_diary_get_title_and_count($diary) ?><?php echo op_diary_image_icon($diary) ?></h4>
+        <h4><!-- <?php if (!$isMyDiaries) echo $diary->Member->name.' :' ?> -->
+            <?php echo op_diary_get_title_and_count($diary) ?><?php echo op_diary_image_icon($diary) ?></h4>
         <p><?php echo op_truncate(op_decoration($diary->body, true), 100, '', 1) ?></p>
       </a>
     </li>
