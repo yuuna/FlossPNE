@@ -105,8 +105,8 @@ pre { color: #06F; }
         <li>コミュニティにトピックやイベントを作成したり</li>
         <li>コメントしたり</li>
         <li>メッセージを送ったり</li>
-        <li data-role="list-divider">既知の不具合</li>
-        <li>非公開にしたはずの日記がWeb全体に公開になってしまう</li>
+        <li data-role="list-divider">新着何件とか</li>
+        <li>表示したいよね</li>
         </ul>
     </div>
 
@@ -132,6 +132,7 @@ pre { color: #06F; }
 
         <li data-role="list-divider">本線との合流予定は？</li>
         <li>未定ですが、これを叩き台にして本線のスマートフォン対応が進めばと思います。</li>
+        <li>とか言ってもまあ apps/smartphone_frontend と幾つかのファイルをコピーするだけでマージできちゃうので簡単かも。</li>
         </ul>
     </div>
 
