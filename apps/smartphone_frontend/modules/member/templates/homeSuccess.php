@@ -17,12 +17,18 @@ function footer()
 
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">ホーム</li>
       <li><a href="#messages"><?php echo __('Messages') ?></a></li>
       <li><?php echo link_to(__('Activities'), 'friend/showActivity') ?></li>
       <li><a href="#diaries"><?php echo __('Diaries') ?></a></li>
       <li><a href="#friends"><?php echo __('Friends') ?></a></li>
       <li><a href="#communities"><?php echo __('Communities') ?></a></li>
       <li><a href="#misc"><?php echo __('Misc') ?></a></li>
+    </ul>
+
+    <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">ドキュメント</li>
+      <li><?php echo link_to('OpenPNEのスマートフォン対応について（2011/6/9）', 'about/index') ?></li>
     </ul>
   </div>
 
