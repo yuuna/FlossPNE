@@ -85,6 +85,17 @@ pre { color: #06F; }
                                         
 
     <div data-role="collapsible" data-collapsed="true">
+      <h3>既知の不具合</h3>
+        <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">認証</li>
+        <li>パスワードを間違えても何も言ってくれない</li>
+        <li data-role="list-divider">日記</li>
+        <li>非公開にしたはずの日記がWeb全体に公開になってしまう</li>
+        </ul>
+    </div>
+
+                                        
+    <div data-role="collapsible" data-collapsed="true">
       <h3>TODO</h3>
         <ul data-role="listview" data-inset="true">
         <li data-role="list-divider">プラグインのものはプラグインの下へ？</li>
@@ -94,6 +105,8 @@ pre { color: #06F; }
         <li>コミュニティにトピックやイベントを作成したり</li>
         <li>コメントしたり</li>
         <li>メッセージを送ったり</li>
+        <li data-role="list-divider">既知の不具合</li>
+        <li>非公開にしたはずの日記がWeb全体に公開になってしまう</li>
         </ul>
     </div>
 
