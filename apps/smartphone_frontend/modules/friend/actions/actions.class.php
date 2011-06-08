@@ -29,7 +29,22 @@ class friendActions extends opFriendAction
     return parent::executeList($request);
   }
 
-#  public function executeShowActivity(sfWebRequest $request)
-#  {
-#  }
+  public function executeShowActivity(sfWebRequest $request)
+  {
+    $activityData = new ActivityData();
+    $activityData->setMemberId($this->getUser()->getMemberId());
+
+    $this->form = new ActivityDataForm($activityData);
+
+    if ($request->isMethod(sfWebRequest::POST))
+    {
+      $this->form->bind($request->getParameter('activity_data'));
+      if ($this->form->isValid())
+      {
+        $this->form->save();
+      }
+    }
+
+    return parent::executeShowActivity($request);
+  }
 }
