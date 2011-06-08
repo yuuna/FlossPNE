@@ -16,14 +16,14 @@
 
   <span align="center">
   <fieldset data-role="controlgroup" data-type="horizontal">
-    <input type="radio" name="diary[public_flag]" id="public_flag_choice_1" value="1" checked="checked" />
-    <label for="public_flag_choice_1">Web全体</label>
-    <input type="radio" name="diary[public_flag]" id="public_flag_choice_2" value="2" />
-    <label for="public_flag_choice_2">全員</label>
-    <input type="radio" name="diary[public_flag]" id="public_flag_choice_3" value="3" />
-    <label for="public_flag_choice_3">友達</label>
     <input type="radio" name="diary[public_flag]" id="public_flag_choice_4" value="4" />
-    <label for="public_flag_choice_4">非公開</label>
+    <label for="public_flag_choice_4">Web全体</label>
+    <input type="radio" name="diary[public_flag]" id="public_flag_choice_1" value="1" checked="checked" />
+    <label for="public_flag_choice_1">全員</label>
+    <input type="radio" name="diary[public_flag]" id="public_flag_choice_2" value="2" />
+    <label for="public_flag_choice_2">友達</label>
+    <input type="radio" name="diary[public_flag]" id="public_flag_choice_3" value="3" />
+    <label for="public_flag_choice_3">非公開</label>
   </fieldset>
   </span>
 
