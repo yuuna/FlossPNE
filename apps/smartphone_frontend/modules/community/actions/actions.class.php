@@ -6,17 +6,23 @@
  * @package    OpenPNE
  * @subpackage community
  * @author     Your name here
- * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
-class communityActions extends sfActions
+class communityActions extends opCommunityAction
 {
  /**
-  * Executes index action
+  * Executes joinlist action
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
+  public function executeJoinlist($request)
   {
-    $this->forward('default', 'module');
+    sfConfig::set('sf_nav_type', 'default');
+
+    if ($request->hasParameter('id') && $request->getParameter('id') != $this->getUser()->getMemberId())
+    {
+      sfConfig::set('sf_nav_type', 'friend');
+    }
+
+    return parent::executeJoinlist($request);
   }
 }
