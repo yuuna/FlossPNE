@@ -1,5 +1,5 @@
 <div data-role="header" data-theme="b">
-  <h1><?php echo __('friend list') ?></h1>
+  <h1><?php echo __('My Friends') ?></h1>
   <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
 </div>
 

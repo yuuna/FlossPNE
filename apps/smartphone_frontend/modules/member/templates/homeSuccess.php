@@ -1,3 +1,15 @@
+<?php
+function footer()
+{
+  $footer = '<div data-role="footer"><p>'
+          . link_to('プライバシーポリシー', 'default/privacyPolicy')
+          . ' '
+          . link_to('利用規約', 'default/userAgreement')
+          . '</p></div>';
+
+  return $footer;
+}
+?>
 <div data-role="page" id="home">
   <div data-role="header" data-theme="b">
      <h1><?php echo opConfig::get('sns_name') ?></h1>
@@ -14,13 +26,7 @@
     </ul>
   </div>
 
-  <div data-role="footer">
-    <p align="right">
-      <?php echo link_to('プライバシーポリシー', 'default/privacyPolicy') ?>
-      <?php echo link_to('利用規約', 'default/userAgreement') ?>
-    </p>
-  </div>
-
+  <?php echo footer() ?>
 </div><!-- page "home" -->
 
 
@@ -38,6 +44,8 @@
       <li><?php echo link_to('ゴミ箱', 'message/dustList') ?></li>
     </ul>
   </div>
+
+  <?php echo footer() ?>
 </div><!-- page "messages" -->
 
 
@@ -54,6 +62,8 @@
       <li>(未)<?php echo link_to(__('New Diary'), 'diary/new') ?></li>
     </ul>
   </div>
+
+  <?php echo footer() ?>
 </div><!-- page "diaries" -->
 
 
@@ -70,6 +80,8 @@
       <li>(未)<?php echo link_to(__('Member search'), 'member/search') ?></li>
     </ul>
   </div>
+
+  <?php echo footer() ?>
 </div><!-- page "members" -->
 
 
@@ -87,6 +99,8 @@
       <li>(未)<?php echo link_to(__('Community search'), 'community/search') ?></li>
     </ul>
   </div>
+
+  <?php echo footer() ?>
 </div><!-- page "message" -->
 
 
@@ -106,4 +120,6 @@
       <li><?php echo link_to(__('Logout'), '@member_logout') ?></li>
     </ul>
   </div>
+
+  <?php echo footer() ?>
 </div><!-- page "misc" -->

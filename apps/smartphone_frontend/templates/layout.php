@@ -11,6 +11,18 @@
   <?php include_javascripts() ?>
 </head>
 <body>
-<div data-role="page" data-url="<?php echo $_SERVER['REQUEST_URI'] ?>"><?php echo $sf_content ?></div>
+<div data-role="page" data-url="<?php echo $_SERVER['REQUEST_URI'] ?>">
+
+<?php echo $sf_content ?>
+
+  <div data-role="footer">
+    <p align="right">
+      <?php echo link_to('プライバシーポリシー', 'default/privacyPolicy') ?>
+      <?php echo link_to('利用規約', 'default/userAgreement') ?>
+    </p>
+  </div>
+
+</div>
+
 </body>
 </html>
