@@ -58,7 +58,7 @@ function footer()
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
       <li><?php echo link_to(__('Recent Diaries'), 'diary/list') ?></li>
-      <li>(未)<?php echo link_to(__('My Diaries'), 'diary/listMember?id='.$memberId) ?></li>
+      <li><?php echo link_to(__('My Diaries'), 'diary/listMember?id='.$memberId) ?></li>
       <li>(未)<?php echo link_to(__('New Diary'), 'diary/new') ?></li>
     </ul>
   </div>
