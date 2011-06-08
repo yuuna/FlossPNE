@@ -12,4 +12,22 @@
  */
 class diaryActions extends opDiaryPluginDiaryActions
 {
+  public function executeShow(sfWebRequest $request)
+  {
+    $diaryComment = new DiaryComment();
+    $diaryComment->setMemberId($this->getUser()->getMemberId());
+
+    $this->form = new DiaryCommentForm($diaryComment);
+
+    if ($request->isMethod(sfWebRequest::POST))
+    {
+      $this->form->bind($request->getParameter('diary_comment'));
+      if ($this->form->isValid())
+      {
+        $this->form->save();
+      }
+    }
+
+    return parent::executeShow($request);
+  }
 }

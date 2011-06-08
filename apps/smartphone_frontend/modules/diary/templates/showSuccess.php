@@ -21,11 +21,15 @@
   <p><?php echo auto_link_text(op_decoration(nl2br($diary->body))) ?></p>
   <hr/>
     
-  <?php $commentCount = $diary->countDiaryComments() ?>
-  <div data-role="collapsible" data-collapsed="true">
-    <h3>コメント (<?php echo $commentCount ?>件)</h3>
-
-    <?php $pager = Doctrine::getTable('DiaryComment')->getDiaryCommentPagerForDiary($diary->getId(), $request['page'], 20); ?>
+<?php
+$q = Doctrine::getTable('DiaryComment')->createQuery()
+    ->where('diary_id = ?', $diary->getId());
+$pager = new sfReversibleDoctrinePager('DiaryComment');
+$pager->setQuery($q);
+$commentCount = $diary->countDiaryComments();
+?>
+  <div data-role="collapsible" data-collapsed="false">
+    <h1>コメント (<?php echo $commentCount ?>件)</h1>
     <ul data-role="listview">
     <?php foreach ($pager->getResults() as $diaryComment): ?>
     <li><p class="ui-li-aside"><?php echo $diaryComment->getCreatedAt() ?></p>
@@ -36,5 +40,14 @@
     <?php endforeach ?>
     </ul>
   </div>
+
+  <h3>コメントを書く</h3>
+    <span align="center">
+      <form action="<?php echo url_for('diary_comment_create', $diary) ?>" method="post">
+      <input type="hidden" name="diary_comment[<?php echo $form->getCSRFFieldName() ?>]" value="<?php echo $form->getCSRFToken() ?>" />
+      <textarea cols="30" rows="4" name="diary_comment[body]"></textarea>
+      <button type="submit" data-theme="a">コメントを投稿する</button>
+      </form>
+    </span>
 </div>
 
