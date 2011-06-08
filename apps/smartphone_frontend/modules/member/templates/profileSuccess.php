@@ -7,6 +7,7 @@
   <?php echo op_image_tag_sf_image($member->getImageFileName(), array('size' => '120x120')) ?><br />
   <!-- #<?php echo $member->getId() ?> -->
 
+  <div data-role="collapsible" data-collapsed="true">
   <h3><?php echo __('Profile') ?></h3>
 
 <?php
@@ -58,11 +59,11 @@ foreach ($member->getProfiles(true) as $profile)
 }
 ?>
 
-<?php foreach ($list as $k => $v): ?>
-  <hr/>
-  <b><?php echo __($k) ?></b><br />
-  <?php echo $v ?><br />
-<?php endforeach ?>
-<hr/>
+  <?php foreach ($list as $k => $v): ?>
+    <b><?php echo __($k) ?></b><br />
+    <?php echo $v ?><br />
+    <hr/>
+  <?php endforeach ?>
+  </div><!-- collapsible -->
 
 </div>
