@@ -90,7 +90,7 @@ pre { color: #06F; }
         <li data-role="list-divider">認証</li>
         <li>パスワードを間違えても何も言ってくれない</li>
         <li data-role="list-divider">日記</li>
-        <li>非公開にしたはずの日記がWeb全体に公開になってしまう</li>
+        <li><s>非公開にしたはずの日記がWeb全体に公開になってしまう</s> →修正済(6/8)</li>
         </ul>
     </div>
 
