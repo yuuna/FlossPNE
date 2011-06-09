@@ -123,8 +123,13 @@
       </p></li>
       <li data-role="list-divider">新着通知まわり</li>
       <li><p>
-      自分宛のメッセージ、コメントがあるときの赤文字表示<br />
+      自分宛のメッセージ、コメントがあるときの赤文字表示<br/>
       新着の日記、コメント、アクティビティがあるときの件数表示
+      </p></li>
+      <li data-role="list-divider">アクティビティ</li>
+      <li><p>
+      アクティビティから日記等へのリンクがまだない<br/>
+      SNS内名称の置換に未対応なので %community% のような文字列がそのまま見える
       </p></li>
       <li data-role="list-divider">コミュニティ</li>
       <li><p>
@@ -148,7 +153,8 @@
 
       <li data-role="list-divider">対応機種は？</li>
       <li><p>
-      jQuery Mobile が対応している機種であれば何でも行けるのではないかと思います（※未確認）。
+      jQuery Mobile が対応している機種であれば何でも行けるのではないかと思います（※未確認）。<br/>
+      → Apple iOS (3.1-4.2: iPhone, iPod Touch, iPad), Android (1.6-2.3), Blackberry 6, Windows Phone 7, Palm WebOS (1.4), Opera Mobile (10.1), Opera Mini (5.02), Firefox Mobile (beta)
       </p></li>
 
       <li data-role="list-divider">コントローラやアクションは pc_frontend の物がそのまま流用できますか？</li>
