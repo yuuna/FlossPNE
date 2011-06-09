@@ -121,7 +121,7 @@ confirmation_list:
 
 ###
 communityTopic_show:
-  url: /communityTopic/show/:id
+  url: /communityTopic/:id
   class: sfDoctrineRoute
   param: { module: communityTopic, action: show }
   options: { model: CommunityTopic, type: object, privilege: view }
@@ -129,14 +129,32 @@ communityTopic_show:
     id:        \d+
     sf_method: [get]
 
+communityTopic_comment_create:
+  url: /communityTopic/:id/comment/create
+  class: sfDoctrineRoute
+  param: { module: communityTopicComment, action: create }
+  options: { model: CommunityTopic, type: object, privilege: view }
+  requirements:
+    id:        \d+
+    sf_method: [post]
+
 communityEvent_show:
-  url: /communityEvent/show/:id
+  url: /communityEvent/:id
   class: sfDoctrineRoute
   param: { module: communityEvent, action: show }
   options: { model: CommunityEvent, type: object, privilege: view }
   requirements:
     id:        \d+
     sf_method: [get]
+
+communityEvent_comment_create:
+  url: /communityEvent/:id/comment/create
+  class: sfDoctrineRoute
+  param: { module: communityEventComment, action: create }
+  options: { model: CommunityEvent, type: object, privilege: view }
+  requirements:
+    id:        \d+
+    sf_method: [post]
 
 about:
   url:   /about

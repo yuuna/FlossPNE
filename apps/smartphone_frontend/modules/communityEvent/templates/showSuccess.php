@@ -43,4 +43,13 @@ $commentCount = $pager->getNbResults();
     <?php endforeach ?>
     </ul>
   </div>
+
+  <h3>コメントを書く</h3>
+    <span align="center">
+      <form action="<?php echo url_for('@communityEvent_comment_create?id='.$communityEvent->getId()) ?>" method="post">
+      <input type="hidden" name="community_event_comment[<?php echo $form->getCSRFFieldName() ?>]" value="<?php echo $form->getCSRFToken() ?>" />
+      <textarea cols="30" rows="4" name="community_event_comment[body]"></textarea>
+      <button type="submit" data-theme="a">コメントを投稿する</button>
+      </form>
+    </span>
 </div>

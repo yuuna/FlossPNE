@@ -21,4 +21,13 @@ class communityTopicActions extends opCommunityTopicPluginTopicActions
       sfConfig::set('sf_nav_id', $this->community->getId());
     }
   }
+
+  public function executeShow(sfWebRequest $request)
+  {
+    $topicComment = new CommunityTopicComment();
+
+    $this->form = new CommunityTopicCommentForm($topicComment);
+
+    return parent::executeShow($request);
+  }
 }

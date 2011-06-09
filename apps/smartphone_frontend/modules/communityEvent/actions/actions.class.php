@@ -21,4 +21,13 @@ class communityEventActions extends opCommunityTopicPluginEventActions
       sfConfig::set('sf_nav_id', $this->community->getId());
     }
   }
+
+  public function executeShow(sfWebRequest $request)
+  {
+    $eventComment = new CommunityEventComment();
+
+    $this->form = new CommunityEventCommentForm($eventComment);
+
+    return parent::executeShow($request);
+  }
 }
