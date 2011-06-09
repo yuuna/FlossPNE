@@ -120,6 +120,15 @@ confirmation_list:
 
 
 ###
+community_home:
+  url: /community/:id
+  class: sfDoctrineRoute
+  param: { module: community, action: home }
+  options: { model: Community, type: object, privilege: view }
+  requirements:
+    id:        \d+
+    sf_method: [get]
+
 communityTopic_show:
   url: /communityTopic/:id
   class: sfDoctrineRoute
