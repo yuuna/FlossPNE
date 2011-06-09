@@ -128,7 +128,7 @@
       </p></li>
       <li data-role="list-divider">アクティビティ</li>
       <li><p>
-      アクティビティから日記等へのリンクがまだない<br/>
+      <s>アクティビティから日記等へのリンクがまだない</s> →6/9<br/>
       SNS内名称の置換に未対応なので %community% のような文字列がそのまま見える
       </p></li>
       <li data-role="list-divider">コミュニティ</li>
