@@ -113,7 +113,9 @@
       <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">プラグインのものはプラグインの下へ？</li>
       <li><p>
-      日記、あしあと、コミュニティトピック等、個々のプラグインの apps/smartphone_frontend で対応すべきかと思われるものもまとめて対応しています。これらは移動すべき？
+      日記、あしあと、コミュニティトピック等、個々のプラグインの apps/smartphone_frontend で対応すべきかと思われるものもまとめて対応しています。これらは移動すべき？<br/>
+      というか、プラグインの有無によってメニューに現れたり現れなかったりとか<br/>
+      そもそもメニューのレイアウトをbackendで出来るようにしたいとか
       </p></li>
       <li data-role="list-divider">投稿系の充実</li>
       <li><p>
