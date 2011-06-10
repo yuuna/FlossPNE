@@ -20,7 +20,7 @@ require_once(dirname(__FILE__).'/../lib/util/opSmartphone.class.php');
 require_once(dirname(__FILE__).'/../lib/util/opMobileUserAgent.class.php');
 
 $is_smartphone = opSmartphone::getInstance()->isSmartphone();
-$is_smartphone = true; // for development
+## $is_smartphone = true; // for development
 
 $is_mobile = !opMobileUserAgent::getInstance()->getMobile()->isNonMobile();
 
