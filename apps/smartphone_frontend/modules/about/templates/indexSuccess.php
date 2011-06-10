@@ -176,7 +176,7 @@ pre { font-weight: normal; color: #06f; }
      マージとかしなくても対応できる方法 (3.6系前提):<pre>
 (APP_ROOTで)
 $ git clone git://github.com/tozuka/OpenPNE3.git -b tz-smartphone-20110603
-$ ln -s ../tz-smartphone/apps/smartphone_frontend apps/smartphone_frontend
+$ ln -s ../tz-smartphone/apps/smartphone_frontend apps/
 $ cp web/index.php web/index.php.bup
 $ cp tz-smartphone/web/index.php web/index.php
 $ cp tz-smartphone/web/smartphone_frontend*.php web/
