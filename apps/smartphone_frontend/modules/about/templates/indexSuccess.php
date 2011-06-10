@@ -126,6 +126,10 @@
       自分宛のメッセージ、コメントがあるときの赤文字表示<br/>
       新着の日記、コメント、アクティビティがあるときの件数表示
       </p></li>
+      <li data-role="list-divider">ページング</li>
+      <li><p>
+      ページャーどうするか後回しにしてるので
+      </p></li>
       <li data-role="list-divider">アクティビティ</li>
       <li><p>
       <s>アクティビティから日記等へのリンクがまだない</s> →6/9<br/>
@@ -138,6 +142,10 @@
       <s>コミュニティ詳細(home)ページ</s> →6/9とりあえず表示。詳細情報入れていきます<br/>
       新規コミュ立ち上げとか<br/>
       新規トピック、新規イベントの作成とか
+      </p></li>
+      <li data-role="list-divider">スマフォユーザがPCレイアウトでも見られるような切替え</li>
+      <li><p>
+      セッション名をpc_frontend/smartphone_frontendで同一にする必要があるらしい(ebi情報)
       </p></li>
       </ul>
       </div>
@@ -165,11 +173,13 @@
 
       <li data-role="list-divider">既に公開されていますか？</li>
       <li><p>
-      とりあえず dazai2 の gitosis に置いてあります。<br/>
+      <s>とりあえず dazai2 の gitosis に置いてあります。<br/>
       <tt>$ git clone git@dazai2.pne.jp:tz-smartphone.git</tt><br/>
-      で行けると思います。<br/>
+      で行けると思います。</s><br/>
+      github にアップしました:<br />
+      https://github.com/tozuka/OpenPNE3/tree/tz-smartphone-20110603<br />
       tz-smartphone-20110603 というブランチで作業しています。<br/>
-      github にももうすぐアップします。forkして遊んでみてください。
+      <s>github にももうすぐアップします。forkして遊んでみてください。</s>
       </p></li>
 
       <li data-role="list-divider">本線との合流予定は？</li>
