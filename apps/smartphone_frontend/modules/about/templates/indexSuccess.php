@@ -1,5 +1,6 @@
 <style>
   p { padding: 0.5em; }
+pre { font-weight: normal; color: #06f; }
 </style>
 
 <div data-role="page" id="toc">
@@ -166,10 +167,26 @@
       <li data-role="list-divider">既に公開されていますか？</li>
       <li><p>
       github にアップしました:<br />
-      https://github.com/tozuka/OpenPNE3/tree/tz-smartphone-20110603<br />
-      tz-smartphone-20110603 というブランチで作業しています。
+      git clone git://github.com/tozuka/OpenPNE3.git -b tz-smartphone-20110603<br />
+      (tz-smartphone-20110603 というブランチで作業しています)
       </p></li>
 
+      <li data-role="list-divider">とりあえず自分のSNSをスマフォ対応にしたいけどどうすればいいの？</li>
+      <li><p>
+     マージとかしなくても対応できる方法 (3.6系前提):<pre>
+(APP_ROOTで)
+$ git clone git://github.com/tozuka/OpenPNE3.git -b tz-smartphone-20110603
+$ ln -s ../tz-smartphone/apps/smartphone_frontend apps/smartphone_frontend
+$ cp web/index.php web/index.php.bup
+$ cp tz-smartphone/web/index.php web/index.php
+$ cp tz-smartphone/web/smartphone_frontend*.php web/
+$ cp tz-smartphone/lib/util/opSmartphone.class.php lib/util/
+$ cp tz-smartphone/web/js/jquery*.js web/js/
+$ cp tz-smartphone/web/css/jquery*.css tz-smartphone/web/css/activity.css web/css/
+$ cp -R tz-smartphone/web/css/images web/css/
+</pre>
+      </p></li>
+     
       <li data-role="list-divider">本線との合流予定は？</li>
       <li><p>
       未定ですが、これを叩き台にして本線のスマートフォン対応が進めばと思います。<br/>
