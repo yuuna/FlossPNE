@@ -25,11 +25,6 @@ function footer()
       <li><a href="#communities"><?php echo __('Communities') ?></a></li>
       <li><a href="#misc"><?php echo __('Misc') ?></a></li>
     </ul>
-
-    <ul data-role="listview" data-inset="true">
-      <li data-role="list-divider">ドキュメント</li>
-      <li><?php echo link_to('OpenPNEのスマートフォン対応について（2011/6/9）', 'about/index') ?></li>
-    </ul>
   </div>
 
   <?php echo footer() ?>
