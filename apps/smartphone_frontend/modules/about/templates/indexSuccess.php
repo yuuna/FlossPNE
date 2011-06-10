@@ -20,14 +20,6 @@
       </div>
 
       <div data-role="collapsible" data-collapsed="true">
-      <h3>デモ環境</h3>
-      <p>
-      <a href="http://sf.inner.tejimaya.com/" target="_blank">http://sf.inner.tejimaya.com/</a> で、スマートフォンから inner にアクセスできます。（要innerアカウント）<br />
-      <br />
-      書き込んだ結果はinnerに反映されますのでご注意ください。</p>
-      </div>
-
-      <div data-role="collapsible" data-collapsed="true">
       <h3>対応状況</h3>
       <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">認証</li>
@@ -173,13 +165,9 @@
 
       <li data-role="list-divider">既に公開されていますか？</li>
       <li><p>
-      <s>とりあえず dazai2 の gitosis に置いてあります。<br/>
-      <tt>$ git clone git@dazai2.pne.jp:tz-smartphone.git</tt><br/>
-      で行けると思います。</s><br/>
       github にアップしました:<br />
       https://github.com/tozuka/OpenPNE3/tree/tz-smartphone-20110603<br />
-      tz-smartphone-20110603 というブランチで作業しています。<br/>
-      <s>github にももうすぐアップします。forkして遊んでみてください。</s>
+      tz-smartphone-20110603 というブランチで作業しています。
       </p></li>
 
       <li data-role="list-divider">本線との合流予定は？</li>
