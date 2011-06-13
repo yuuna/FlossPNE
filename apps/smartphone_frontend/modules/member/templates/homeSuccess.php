@@ -44,10 +44,10 @@ function footer()
 
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
-      <li><?php echo link_to('受信メッセージ', 'message/index') ?></li>
-      <li><?php echo link_to('送信済みメッセージ', 'message/sendList') ?></li>
-      <li><?php echo link_to('下書きメッセージ', 'message/draftList') ?></li>
-      <li><?php echo link_to('ゴミ箱', 'message/dustList') ?></li>
+      <li><?php echo link_to(__('Inbox'), 'message/index') ?></li>
+      <li><?php echo link_to(__('Sent Messages'), 'message/sendList') ?></li>
+      <li><?php echo link_to(__('Drafts'), 'message/draftList') ?></li>
+      <li><?php echo link_to(__('Trash'), 'message/dustList') ?></li>
     </ul>
   </div>
 
@@ -118,9 +118,9 @@ function footer()
 
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
-      <li>(未)<?php echo link_to(__('Favorites'), 'favorite/list') ?></li>
+<!--  <li>(未)<?php echo link_to(__('Favorites'), 'favorite/list') ?></li> -->
       <li><?php echo link_to(__('Pageview logs'), 'ashiato/list') ?></li>
-      <li>(未)<?php echo link_to(__('Ranking'), 'ranking/index') ?></li>
+<!--  <li>(未)<?php echo link_to(__('Ranking'), 'ranking/index') ?></li> -->
       <li><?php echo link_to(__('My Profile'), '@member_profile_mine') ?></li>
       <li>(未)<?php echo link_to(__('Settings'), 'member/config') ?></li>
       <li><?php echo link_to(__('Logout'), '@member_logout') ?></li>

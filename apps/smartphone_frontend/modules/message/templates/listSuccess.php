@@ -8,7 +8,7 @@ switch ($messageType):
 #    $sender_title = __('From');
     break;
   case 'send':
-    $title = __('Sent Message');
+    $title = __('Sent Messages');
     $page_url = "@sendList";
 #    $sender_title = __('To');
     break;
