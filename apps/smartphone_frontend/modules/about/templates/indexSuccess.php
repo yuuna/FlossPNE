@@ -110,14 +110,15 @@ pre { font-weight: normal; color: #06f; }
       というか、プラグインの有無によってメニューに現れたり現れなかったりとか<br/>
       そもそもメニューのレイアウトをbackendで出来るようにしたいとか
       </p></li>
-      <li data-role="list-divider">投稿系の充実</li>
+      <li data-role="list-divider">メッセージ</li>
       <li><p>
-      メッセージを送ったり
+      <s>自分宛の新着メッセージがあるときの赤文字表示</s> →黄色リスト(swatch E)で表示(6/13)<br/>
+      メッセージ送信
       </p></li>
-      <li data-role="list-divider">新着通知まわり</li>
+      <li data-role="list-divider">日記</li>
       <li><p>
-      自分宛のメッセージ、コメントがあるときの赤文字表示<br/>
-      新着の日記、コメント、アクティビティがあるときの件数表示
+      <s>自分宛の新着コメントがあるときの赤文字表示</s> →黄色リスト(swatch E)で表示(6/13)<br/>
+      新着の日記、コメントがあるときの通知（件数表示とか）
       </p></li>
       <li data-role="list-divider">ページング</li>
       <li><p>
@@ -126,7 +127,8 @@ pre { font-weight: normal; color: #06f; }
       <li data-role="list-divider">アクティビティ</li>
       <li><p>
       <s>アクティビティから日記等へのリンクがまだない</s> →6/9<br/>
-      SNS内名称の置換に未対応なので %community% のような文字列がそのまま見える
+      SNS内名称の置換に未対応なので %community% のような文字列がそのまま見える<br/>
+      新着アクティビティがあるときの通知（件数表示とか）
       </p></li>
       <li data-role="list-divider">コミュニティ</li>
       <li><p>
