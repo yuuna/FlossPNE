@@ -188,7 +188,7 @@ $ cp tz-smartphone/web/index.php web/index.php
 $ cp tz-smartphone/web/smartphone_frontend*.php web/
 $ cp tz-smartphone/lib/util/opSmartphone.class.php lib/util/
 $ cp tz-smartphone/web/js/jquery*.js web/js/
-$ cp tz-smartphone/web/css/jquery*.css tz-smartphone/web/css/activity.css web/css/
+$ cp tz-smartphone/web/css/jquery*.css tz-smartphone/web/css/smartphone.css web/css/
 $ cp -R tz-smartphone/web/css/images web/css/
 </pre>
       </p></li>

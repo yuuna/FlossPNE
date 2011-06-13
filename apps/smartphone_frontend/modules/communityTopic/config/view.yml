@@ -1,5 +1,0 @@
-showSuccess:
-  stylesheets: [main.css, jquery.mobile-1.0a4.1.min.css, activity.css]
-
-recentlyTopicListSuccess:
-  stylesheets: [main.css, jquery.mobile-1.0a4.1.min.css, activity.css]
