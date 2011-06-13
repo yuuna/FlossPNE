@@ -1,6 +1,6 @@
 <div data-role="page" id="home">
   <div data-role="header" data-theme="b">
-    <a data-rel="back" href="#">戻る</a>
+    <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
     <h1><?php echo $member->getNameAndCount() ?></h1>
     <?php echo link_to('Home', '@homepage',
             array('data-icon' => 'home',
@@ -74,7 +74,7 @@ foreach ($member->getProfiles(true) as $profile)
 ?>
 <div data-role="page" id="profile">
   <div data-role="header" data-theme="b">
-    <a data-rel="back" href="#">戻る</a>
+    <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
     <h1><?php echo __('Profile') ?></h1>
     <?php echo link_to('Home', '@homepage',
             array('data-icon' => 'home',
