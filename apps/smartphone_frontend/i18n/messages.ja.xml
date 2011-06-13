@@ -111,6 +111,11 @@
         <source>Self Introduction</source>
         <target>自己紹介</target>
       </trans-unit>
+
+      <trans-unit id="">
+        <source>There are new %d messages!</source>
+        <target>新着メッセージが%d件あります！</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

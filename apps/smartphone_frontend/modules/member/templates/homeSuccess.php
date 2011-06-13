@@ -17,10 +17,8 @@ function footer()
 
   <div data-role="content">
     <ul data-role="listview" data-inset="true" data-theme="e">
-    <li><p>
-      <?php include_component('diary', 'noticeUnreadDiaryComment') ?>
-      <?php include_component('message', 'unreadMessage') ?>
-    </p></li>
+    <?php include_component('diary', 'noticeUnreadDiaryComment') ?>
+    <?php include_component('message', 'unreadMessage') ?>
     </ul>
 
     <ul data-role="listview" data-inset="true">
