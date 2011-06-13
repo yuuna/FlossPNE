@@ -1,7 +1,13 @@
 <div data-role="page" id="home">
   <div data-role="header" data-theme="b">
-    <h1><?php echo $member->getNameAndCount() ?></h1>
     <a data-rel="back" href="#">戻る</a>
+    <h1><?php echo $member->getNameAndCount() ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">
@@ -68,8 +74,14 @@ foreach ($member->getProfiles(true) as $profile)
 ?>
 <div data-role="page" id="profile">
   <div data-role="header" data-theme="b">
-    <h1><?php echo __('Profile') ?></h1>
     <a data-rel="back" href="#">戻る</a>
+    <h1><?php echo __('Profile') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">

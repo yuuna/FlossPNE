@@ -1,10 +1,5 @@
-<div data-role="header" data-theme="b">
-  <h1>日記を書く</h1>
-  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-</div>
+<?php slot('title', '日記を書く') ?>
 
-
-<div data-role="content">
 <form action="<?php echo url_for('diary/create') ?>" method="post">
   <!-- <strong>*</strong>は必須項目です。-->
  
@@ -30,4 +25,4 @@
   <input type="hidden" name="diary[<?php echo $form->getCSRFFieldName() ?>]" value="<?php echo $form->getCSRFToken() ?>" />
   <button type="submit" data-theme="a">投稿</button>
 </form>
-</div>
+

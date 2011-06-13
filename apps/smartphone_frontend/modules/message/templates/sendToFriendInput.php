@@ -1,14 +1,8 @@
-<div data-role="header" data-theme="b">
-  <h1><?php echo __('メッセージを書く') ?></h1>
-  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-</div>
+<?php slot('title', __('メッセージを書く')) ?>
 
-<div data-role="content">
-  <form action="<?php echo url_for('message/sendToFriend') ?>" method="post" data-ajax="false" >
-
-  <ul data-role="listview">
-    <li>
-
+<form action="<?php echo url_for('message/sendToFriend') ?>" method="post" data-ajax="false" >
+<ul data-role="listview">
+  <li>
   <div data-role="fieldcontain">
     <label for="message_subject">件名</label>
     <input type="text" name="message[subject]" id="message_subject" /><br />
@@ -29,7 +23,7 @@
     <input type="submit" class="input_submit" value="送信" data-theme="a" /> 
     <input type="submit" class="input_submit" value="下書き保存" name="is_draft" data-theme="b" /> 
     </div>
-    </li>
-  </ul>
-  </form>
-</div>
+  </li>
+</ul>
+</form>
+

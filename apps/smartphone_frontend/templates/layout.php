@@ -12,8 +12,20 @@
 </head>
 <body>
 <div data-role="page" data-url="<?php echo $_SERVER['REQUEST_URI'] ?>">
+  <div data-role="header" data-theme="b">
+    <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+    <h1><?php include_slot('title') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
+  </div>
 
-<?php echo $sf_content ?>
+  <div data-role="content">
+    <?php echo $sf_content ?>
+  </div>
 
   <div data-role="footer">
     <p align="right">
@@ -23,6 +35,5 @@
   </div>
 
 </div>
-
 </body>
 </html>

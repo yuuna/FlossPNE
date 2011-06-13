@@ -1,11 +1,7 @@
 <?php use_helper('opDiary'); ?>
 
 <?php $isMyDiaries = ($sf_user->getMemberId() === $member->id) ? true : false; ?>
-
-<div data-role="header" data-theme="b">
-  <h1><?php echo $isMyDiaries ? __('My Diaries') : ($member->getName().'さんの日記') ?></h1>
-  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-</div>
+<?php slot('title', $isMyDiaries ? __('My Diaries') : ($member->getName().'さんの日記')) ?>
 
 <?php if ($pager->getNbResults()): ?>
 <div data-role="content">

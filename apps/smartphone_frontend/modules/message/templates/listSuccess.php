@@ -1,5 +1,3 @@
-<?#php use_helper('Date', 'JavascriptBase'); ?>
-
 <?php 
 switch ($messageType):
   case 'receive':
@@ -23,16 +21,11 @@ switch ($messageType):
 #    $sender_title = __('From/To');
     break;
 endswitch;
+
+slot('title', $title);
 ?>
-
-<div data-role="header" data-theme="b">
-  <h1><?php echo $title ?></h1>
-  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-</div>
-
-<div data-role="content">
-  <?php if ($pager->getNbResults()): ?>
-  <ul data-role="listview">
+<?php if ($pager->getNbResults()): ?>
+<ul data-role="listview">
   <?php foreach ($pager->getResults() as $message): ?>
   <?php
 switch ($messageType):
@@ -91,4 +84,4 @@ endswitch;
 <?php else: ?>
 <?php   echo __('There are no messages') ?>
 <?php endif; ?>
-</div>
+

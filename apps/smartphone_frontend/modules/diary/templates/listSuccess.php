@@ -13,24 +13,9 @@ else
 }
 ?>
 
-<div data-role="header" data-theme="b">
-<h1><?php echo $title ? $title : __('diary list') ?></h1>
-  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-</div>
+<?php slot('title', $title ? $title : __('diary list')) ?>
 
-<!--
-<div id="diarySearchFormLine" class="parts searchFormLine">
-<form action="<?php echo url_for('@diary_search') ?>" method="get">
-<p class="form">
-<input id="keyword" type="text" class="input_text" name="keyword" size="30" value="<?php if (isset($keyword)) echo $keyword ?>" />
-<input type="submit" value="<?php echo __('Search') ?>" />
-</p>
-</form>
-</div>
-
--->
 <?php if ($pager->getNbResults()): ?>
-<div data-role="content">
   <ul data-role="listview">
   <?php foreach ($pager->getResults() as $diary): ?>
     <li>
@@ -43,7 +28,6 @@ else
     </li>
   <?php endforeach; ?>
   </ul>
-</div>
     
 <?php else: ?>
 <?php op_include_box('diaryList', (!isset($keyword)) ? __('There are no diaries.') : __('Your search "%1%" did not match any diaries.', array('%1%' => $keyword)), array('title' => $title)) ?>

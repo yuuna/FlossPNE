@@ -1,17 +1,12 @@
 <?php use_helper('Date'); ?>
 
-<div data-role="header" data-theme="b">
-  <h1><?php echo '['.$community->getName().'] '.__('Event') ?></h1>
-  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-  <!-- <p class="public">(<?#php echo $diary->getPublicFlagLabel() ?>)</p> -->
-</div>
+<?php slot('title', '['.$community->getName().'] '.__('Event')) ?>
 
-<div data-role="content">
-  <p class="ui-li-aside"><?php echo op_format_date($communityEvent->getCreatedAt(), 'XDateTimeJaBr') ?></p>
+<p class="ui-li-aside"><?php echo op_format_date($communityEvent->getCreatedAt(), 'XDateTimeJaBr') ?></p>
 
-  <h3><?php echo $communityEvent->getName() ?></h3>
-  <p><?php if ($_member = $communityEvent->getMember()) : ?><?php echo link_to($_member->getName(), 'member/profile?id='.$_member->getId()) ?><?php endif; ?></p>
-  <hr/>
+<h3><?php echo $communityEvent->getName() ?></h3>
+<p><?php if ($_member = $communityEvent->getMember()) : ?><?php echo link_to($_member->getName(), 'member/profile?id='.$_member->getId()) ?><?php endif; ?></p>
+<hr/>
 
 <?php if (count($images = $communityEvent->getImages()) != 0): ?>
   <?php foreach ($images as $image): ?>
@@ -22,7 +17,7 @@
 <?php echo op_url_cmd(nl2br($communityEvent->getBody())) ?>
 <?php if ($communityEvent->isEditable($sf_user->getMemberId())): ?>
 <?php endif; ?>
-  <hr />
+<hr />
 
 <?php
 $q = Doctrine::getTable('CommunityEventComment')->createQuery()
@@ -44,12 +39,11 @@ $commentCount = $pager->getNbResults();
     </ul>
   </div>
 
-  <h3>コメントを書く</h3>
-    <span align="center">
-      <form action="<?php echo url_for('@communityEvent_comment_create?id='.$communityEvent->getId()) ?>" method="post">
-      <input type="hidden" name="community_event_comment[<?php echo $form->getCSRFFieldName() ?>]" value="<?php echo $form->getCSRFToken() ?>" />
-      <textarea cols="30" rows="4" name="community_event_comment[body]"></textarea>
-      <button type="submit" data-theme="a">コメントを投稿する</button>
-      </form>
-    </span>
-</div>
+<h3>コメントを書く</h3>
+  <span align="center">
+    <form action="<?php echo url_for('@communityEvent_comment_create?id='.$communityEvent->getId()) ?>" method="post">
+    <input type="hidden" name="community_event_comment[<?php echo $form->getCSRFFieldName() ?>]" value="<?php echo $form->getCSRFToken() ?>" />
+    <textarea cols="30" rows="4" name="community_event_comment[body]"></textarea>
+    <button type="submit" data-theme="a">コメントを投稿する</button>
+    </form>
+  </span>
