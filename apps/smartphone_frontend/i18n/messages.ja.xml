@@ -116,6 +116,15 @@
         <source>There are new %d messages!</source>
         <target>新着メッセージが%d件あります！</target>
       </trans-unit>
+
+      <trans-unit id="">
+        <source>Errors</source>
+        <target>エラー</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Failed in login.</source>
+        <target>ログインに失敗しました。</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

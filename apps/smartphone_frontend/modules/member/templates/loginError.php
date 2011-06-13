@@ -1,9 +1,9 @@
-<?php
-$options = array(
-  'title' => __('Errors'),
-);
-op_include_box('loginError', __('Failed in login.'), $options);
-?>
+<div data-role="header" data-theme="b">
+  <h1><?php echo __('Errors') ?></h1>
+  <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+</div>
 
-<?php use_helper('Javascript') ?>
-<?php op_include_line('backLink', link_to_function(__('Back to previous page'), 'history.back()')) ?>
+<div data-role="content">
+  <p><?php echo __('Failed in login.') ?></p>
+</div>
+

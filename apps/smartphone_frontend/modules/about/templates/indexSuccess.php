@@ -92,7 +92,7 @@ pre { font-weight: normal; color: #06f; }
       <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">認証</li>
       <li><p>
-      パスワードを間違えても何も言ってくれない
+      <s>パスワードを間違えても何も言ってくれない</s> →修正済み(6/13)
       </p></li>
       <li data-role="list-divider">日記</li>
       <li><p>
