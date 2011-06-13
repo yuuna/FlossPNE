@@ -16,6 +16,13 @@ function footer()
   </div>
 
   <div data-role="content">
+    <ul data-role="listview" data-inset="true" data-theme="e">
+    <li><p>
+      <?php include_component('diary', 'noticeUnreadDiaryComment') ?>
+      <?php include_component('message', 'unreadMessage') ?>
+    </p></li>
+    </ul>
+
     <ul data-role="listview" data-inset="true">
       <li data-role="list-divider">ホーム</li>
       <li><a href="#messages"><?php echo __('Messages') ?></a></li>
