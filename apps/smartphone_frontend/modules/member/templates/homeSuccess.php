@@ -38,8 +38,14 @@ function footer()
 
 <div data-role="page" id="messages">
   <div data-role="header" data-theme="b">
-    <h1><?php echo __('Messages') ?></h1>
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+    <h1><?php echo __('Messages') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">
@@ -57,8 +63,14 @@ function footer()
 
 <div data-role="page" id="diaries">
   <div data-role="header" data-theme="b">
-    <h1><?php echo __('Diaries') ?></h1>
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+    <h1><?php echo __('Diaries') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">
@@ -75,8 +87,14 @@ function footer()
 
 <div data-role="page" id="friends">
   <div data-role="header" data-theme="b">
-    <h1><?php echo __('Friends') ?></h1>
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+    <h1><?php echo __('Friends') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">
@@ -93,8 +111,14 @@ function footer()
 
 <div data-role="page" id="communities">
   <div data-role="header" data-theme="b">
-    <h1><?php echo __('Communities') ?></h1>
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+    <h1><?php echo __('Communities') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">
@@ -112,8 +136,14 @@ function footer()
 
 <div data-role="page" id="misc">
   <div data-role="header" data-theme="b">
-    <h1><?php echo __('Misc') ?></h1>
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
+    <h1><?php echo __('Misc') ?></h1>
+    <?php echo link_to('Home', '@homepage',
+            array('data-icon' => 'home',
+                  'data-iconpos' => 'notext',
+                  'data-direction' => 'reverse',
+                  'class' => 'ui-btn-right jqm-home',
+                  'data-theme' => 'b')) ?>
   </div>
 
   <div data-role="content">

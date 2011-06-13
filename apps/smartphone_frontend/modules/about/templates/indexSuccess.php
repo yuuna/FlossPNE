@@ -104,11 +104,9 @@ pre { font-weight: normal; color: #06f; }
       <div data-role="collapsible" data-collapsed="true">
       <h3>TODO</h3>
       <ul data-role="listview" data-inset="true">
-      <li data-role="list-divider">プラグインのものはプラグインの下へ？</li>
+      <li data-role="list-divider">ナビゲーション</li>
       <li><p>
-      日記、あしあと、コミュニティトピック等、個々のプラグインの apps/smartphone_frontend で対応すべきかと思われるものもまとめて対応しています。これらは移動すべき？<br/>
-      というか、プラグインの有無によってメニューに現れたり現れなかったりとか<br/>
-      そもそもメニューのレイアウトをbackendで出来るようにしたいとか
+      <s>ヘッダーバーにHomeボタンを設置</s> →(6/13)
       </p></li>
       <li data-role="list-divider">メッセージ</li>
       <li><p>
@@ -141,6 +139,12 @@ pre { font-weight: normal; color: #06f; }
       <li data-role="list-divider">スマフォユーザがPCレイアウトでも見られるような切替え</li>
       <li><p>
       セッション名をpc_frontend/smartphone_frontendで同一にする必要があるらしい(ebi情報)
+      </p></li>
+      <li data-role="list-divider">プラグインのものはプラグインの下へ？</li>
+      <li><p>
+      日記、あしあと、コミュニティトピック等、個々のプラグインの apps/smartphone_frontend で対応すべきかと思われるものもまとめて対応しています。これらは移動すべき？<br/>
+      というか、プラグインの有無によってメニューに現れたり現れなかったりとか<br/>
+      そもそもメニューのレイアウトをbackendで出来るようにしたいとか
       </p></li>
       </ul>
       </div>
