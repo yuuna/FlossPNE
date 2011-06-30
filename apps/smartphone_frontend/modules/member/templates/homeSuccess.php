@@ -100,7 +100,7 @@ function footer()
   <div data-role="content">
     <ul data-role="listview" data-inset="true">
       <li><?php echo link_to(__('My Friends'), 'friend/list') ?></li>
-      <li>(未)<?php echo link_to(__('Invite Friends'), '@member_invite') ?></li>
+      <li><?php echo link_to(__('Invite Friends'), '@member_invite') ?></li>
       <li>(未)<?php echo link_to(__('Member search'), 'member/search') ?></li>
     </ul>
   </div>
