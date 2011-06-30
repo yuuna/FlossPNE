@@ -10,8 +10,17 @@
 
 require_once(dirname(__FILE__).'/../config/ProjectConfiguration.class.php');
 
+if ('s' === $_SERVER['QUERY_STRING'])
+{
+  $app = 'smartphone_frontend';
+}
+else
+{
+  $app = 'pc_frontend';
+}
+
 // we can use session after loading factories (don't need to dispatch controller)
-$configuration = ProjectConfiguration::getApplicationConfiguration('pc_frontend', 'prod', false);
+$configuration = ProjectConfiguration::getApplicationConfiguration($app, 'prod', false);
 sfContext::createInstance($configuration);
 
 require_once(sfConfig::get('sf_data_dir').'/kcaptcha/kcaptcha.php');
