@@ -15,9 +15,11 @@
  * @subpackage widget
  * @author     Tozuka <tozuka@tejimaya.com>
  */
-class sfWidgetFormSchemaFormatterSmartphone extends opWidgetFormSchemaFormatter
+class sfWidgetFormSchemaFormatterSmartphone extends sfWidgetFormSchemaFormatterMobile
 {
+/*
   protected
     $helpFormat            = '<div class="help">%help%</div>',
     $errorListFormatInARow = "  <div class=\"error\"><ul class=\"error_list\">\n%errors%  </ul></div>\n";
+*/
 }
