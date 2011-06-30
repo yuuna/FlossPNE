@@ -140,6 +140,10 @@ function get_customizes($id, $name, $vars = null)
   $context = sfContext::getInstance();
 
   $viewInstance = $context->get('view_instance');
+  if ($viewInstance instanceof sfPHPView)
+  {
+    return ''; /// smartphone
+  }
   $customizes = $viewInstance->getCustomize('', $id, $name);
   $lastActionStack = $context->getActionStack()->getLastEntry();
 
