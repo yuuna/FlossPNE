@@ -177,6 +177,10 @@
         <source>Change Settings</source>
         <target>設定変更</target>
       </trans-unit>
+      <trans-unit id="">
+        <source>Send</source>
+        <target>送信</target>
+      </trans-unit>
 
     </body>
   </file>
