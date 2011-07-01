@@ -1,8 +1,8 @@
 <?php slot('title', __('Post a diary')) ?>
 
 <?php if (Doctrine::getTable('SnsConfig')->get('op_diary_plugin_use_email_post', true)): ?>
-<!-- [i:106] --><?php echo op_mail_to('mail_diary_create', array(), __('Post via E-mail')) ?><br>
-<?php echo __('You can attach photo files to e-mail.') ?><br>
+<!-- [i:106] --><?php echo str_replace('mailto:', 'sms:', op_mail_to('mail_diary_create', array(), __('Post via MMS'))) ?><br>
+<?php echo __('You can attach photo files to MMS.') ?><br>
 <?php endif; ?>
 
 <hr />
