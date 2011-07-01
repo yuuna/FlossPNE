@@ -159,6 +159,21 @@
         <target>メンバー登録</target>
       </trans-unit>
 
+
+      <trans-unit id="">
+        <source>Post a diary</source>
+        <target>日記を書く</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Post via E-mail</source>
+        <target>メールで投稿する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can attach photo files to e-mail.</source>
+        <target>メールには写真を添付することができます。</target>
+      </trans-unit>
+
+
     </body>
   </file>
 </xliff>

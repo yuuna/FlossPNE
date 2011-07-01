@@ -1,6 +1,19 @@
-<?php slot('title', '日記を書く') ?>
+<?php slot('title', __('Post a diary')) ?>
 
-<form action="<?php echo url_for('diary/create') ?>" method="post">
+<?php if (Doctrine::getTable('SnsConfig')->get('op_diary_plugin_use_email_post', true)): ?>
+<!-- [i:106] --><?php echo op_mail_to('mail_diary_create', array(), __('Post via E-mail')) ?><br>
+<?php echo __('You can attach photo files to e-mail.') ?><br>
+<?php endif; ?>
+
+<hr />
+
+<?php
+#$options['url'] = url_for('diary_create');
+#$options['button'] = __('Save');
+#op_include_form('formDiary', $form, $options);
+?>
+
+<form action="<?php echo url_for('@diary_create') ?>" method="post">
   <!-- <strong>*</strong>は必須項目です。-->
  
   <label for="diary_title">タイトル</label>
