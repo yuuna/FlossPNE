@@ -46,4 +46,9 @@ $commentCount = $diary->countDiaryComments();
     </form>
   </span>
 
+<?php if (Doctrine::getTable('SnsConfig')->get('op_diary_plugin_use_email_post', true)): ?>
+<?php echo str_replace('mailto:', 'sms:', op_mail_to('mail_diary_comment_create', array('id' => $diary->id), __('Post via MMS'))) ?><br>
+<?php echo __('You can attach photo files to MMS.') ?><br>
+<?php endif; ?>
+
 
