@@ -173,6 +173,10 @@
         <target>MMSには写真を添付することができます。</target>
       </trans-unit>
 
+      <trans-unit id="">
+        <source>Change Settings</source>
+        <target>設定変更</target>
+      </trans-unit>
 
     </body>
   </file>

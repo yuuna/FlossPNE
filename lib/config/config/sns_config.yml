@@ -52,6 +52,18 @@ general:
       - "使用しない"
       - "使用する"
 
+  enable_smartphone:
+    Name:      "enable_smartphone"
+    Caption:   "スマートフォン版使用設定"
+    FormType:  "radio"
+    ValueType: "text"
+    IsRequired: true
+    IsTrim:     true
+    Default:    1
+    Choices:
+      - "使用しない"
+      - "使用する"
+
   enable_friend_link:
     Name:       "enable_friend_link"
     Caption:    "フレンドリンク使用設定"
