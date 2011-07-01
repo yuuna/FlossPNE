@@ -49,6 +49,11 @@ $commentCount = $pager->getNbResults();
   </span>
 
 <?php if ('example.com' !== sfConfig::get('op_mail_domain')): ?>
-<?php echo str_replace('mailto:', 'sms:', op_mail_to('mail_community_topic_comment_create', array('id' => $communityTopic->id), __('Post via MMS'))) ?><br>
-<?php echo __('You can attach photo files to MMS.') ?><br>
+<?php  if (opSmartphone::getInstance()->isAndroid()): ?>
+<?php   echo op_mail_to('mail_community_topic_comment_create', array('id' => $communityTopic->id), __('Post via E-mail')) ?><br>
+<?php   echo __('You can attach photo files to E-mail.') ?><br>
+<?php  else: ?>
+<?php   echo str_replace('mailto:', 'sms:', op_mail_to('mail_community_topic_comment_create', array('id' => $communityTopic->id), __('Post via MMS'))) ?><br>
+<?php   echo __('You can attach photo files to MMS.') ?><br>
+<?php  endif; ?>
 <?php endif; ?>

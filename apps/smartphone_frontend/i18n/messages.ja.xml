@@ -165,12 +165,20 @@
         <target>日記を書く</target>
       </trans-unit>
       <trans-unit id="">
+        <source>Post via E-mail</source>
+        <target>メールで投稿する</target>
+      </trans-unit>
+      <trans-unit id="">
         <source>Post via MMS</source>
         <target>MMSで投稿する</target>
       </trans-unit>
       <trans-unit id="">
         <source>You can attach photo files to MMS.</source>
         <target>MMSには写真を添付することができます。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can attach photo files to E-mail.</source>
+        <target>メールには写真を添付することができます。</target>
       </trans-unit>
 
       <trans-unit id="">

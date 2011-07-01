@@ -43,4 +43,15 @@ class opSmartphone
 
     return false;
   }
+
+  public function isAndroid()
+  {
+    if (preg_match('/Android/', $_SERVER['HTTP_USER_AGENT']))
+    {
+      return true;
+    }
+
+    return false;
+  }
+
 }
