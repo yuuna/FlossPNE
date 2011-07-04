@@ -190,6 +190,28 @@
         <target>送信</target>
       </trans-unit>
 
+      <trans-unit id="">
+        <source>%0% is required field.</source>
+        <target>%0%は必須項目です。</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Password Configuration</source>
+        <target>パスワード設定</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password</source>
+        <target>パスワード</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password (Confirm)</source>
+        <target>パスワード(確認)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password must be 6-12 characters.</source>
+        <target>パスワードは6～12文字の半角英数で入力してください。</target>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
