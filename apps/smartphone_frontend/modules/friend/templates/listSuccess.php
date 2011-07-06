@@ -11,4 +11,20 @@
     </a>
   </li>
 <?php endforeach ?>
+  <li id="loadmore">
+      <h3>Next</h3>
+  </li>
 </ul>
+<script type="text/javascript">
+(function () {
+  Smart.pager.num = '2';
+  Smart.pager.ajaxOption = {
+    type : 'GET',
+    url : 'list.json?page=2',
+    dataType : 'json',
+    complete : function (data, dataType) {
+      alert(dataType);
+    },
+  };
+})();
+</script>

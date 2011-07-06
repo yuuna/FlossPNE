@@ -27,6 +27,10 @@ friend_list:
   url: /friend/list
   param: { module: friend, action: list }
 
+friend_list_json:
+  url: /friend/list.json
+  param: { module: friend, action: list, sf_format: json }
+
 friend_showActivity:
   url: /friend/showActivity
   param: { module: friend, action: showActivity }

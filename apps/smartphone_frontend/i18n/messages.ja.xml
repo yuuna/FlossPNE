@@ -145,6 +145,10 @@
         <source>There are no messages</source>
         <target>メッセージがありません</target>
       </trans-unit>
+      <trans-unit id="">
+        <source>You don't have any friend.</source>
+        <target>友人がいません。</target>
+      </trans-unit>
 
     </body>
   </file>
