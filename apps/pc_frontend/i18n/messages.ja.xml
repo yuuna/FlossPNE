@@ -459,6 +459,18 @@
         <target>携帯メールアドレス(確認)</target>
       </trans-unit>
       <trans-unit id="">
+        <source>Smartphone MMS Address Configuration</source>
+        <target>スマートフォンMMSアドレス設定</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Smartphone MMS Address</source>
+        <target>スマートフォンMMSアドレス</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Smartphone MMS Address (Confirm)</source>
+        <target>スマートフォンMMSアドレス(確認)</target>
+      </trans-unit>
+      <trans-unit id="">
         <source>Password Configuration</source>
         <target>パスワード設定</target>
       </trans-unit>

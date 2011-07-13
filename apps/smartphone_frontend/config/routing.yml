@@ -129,6 +129,9 @@ diary_new:
   url: /diary/new
   param: { module: diary, action: new }
 
+diary_create:
+  url: /diary/create
+  param: { module: diary, action: create }
 
 confirmation_list:
   url:   /confirmation

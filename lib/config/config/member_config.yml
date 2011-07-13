@@ -55,6 +55,7 @@ pcAddress:
     caption: "PC E-mail Address Configuration"
     enable_pc:     true
     enable_mobile: true
+    enable_smartphone: true
     depending_sns_config: enable_pc
   pc_address:
     Name:       "pc_address"
@@ -72,10 +73,29 @@ mobileAddress:
     caption: "Mobile E-mail Address Configuration"
     enable_pc:     true
     enable_mobile: true
+    enable_smartphone: true
     depending_sns_config: enable_mobile
   mobile_address:
     Name:       "mobile_address"
     Caption:    "Mobile E-mail Address"
+    FormType:   "input"
+    ValueType:  "mobile_email"
+    IsRegist:   false
+    IsConfig:   true
+    IsRequired: true
+    IsUnique:   true
+    IsConfirm:  true
+
+smartphoneAddress:
+  _attributes:
+    caption: "Smartphone MMS Address Configuration"
+    enable_pc:     true
+    enable_mobile: true
+    enable_smartphone: true
+    depending_sns_config: enable_smartphone
+  smartphone_address:
+    Name:       "smartphone_address"
+    Caption:    "Smartphone MMS Address"
     FormType:   "input"
     ValueType:  "mobile_email"
     IsRegist:   false

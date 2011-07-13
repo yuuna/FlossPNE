@@ -51,6 +51,10 @@
         <target>友人を招待する</target>
       </trans-unit>
       <trans-unit id="">
+        <source>Invite a friend to %1%</source>
+        <target>友人を%1%に招待する</target>
+      </trans-unit>
+      <trans-unit id="">
         <source>Member search</source>
         <target>メンバー検索</target>
       </trans-unit>
@@ -130,6 +134,10 @@
         <target>送信済みメッセージ</target>
       </trans-unit>
       <trans-unit id="">
+        <source>Sent.</source>
+        <target>送信が完了しました。</target>
+      </trans-unit>
+      <trans-unit id="">
         <source>Drafts</source>
         <target>下書きメッセージ</target>
       </trans-unit>
@@ -152,6 +160,64 @@
       <trans-unit id="">
         <source>My Friend Setting</source>
         <target>マイフレンド管理</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Member Registration</source>
+        <target>メンバー登録</target>
+      </trans-unit>
+
+
+      <trans-unit id="">
+        <source>Post a diary</source>
+        <target>日記を書く</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Post via E-mail</source>
+        <target>メールで投稿する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Post via MMS</source>
+        <target>MMSで投稿する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can attach photo files to MMS.</source>
+        <target>MMSには写真を添付することができます。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You can attach photo files to E-mail.</source>
+        <target>メールには写真を添付することができます。</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Change Settings</source>
+        <target>設定変更</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Send</source>
+        <target>送信</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>%0% is required field.</source>
+        <target>%0%は必須項目です。</target>
+      </trans-unit>
+
+      <trans-unit id="">
+        <source>Password Configuration</source>
+        <target>パスワード設定</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password</source>
+        <target>パスワード</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password (Confirm)</source>
+        <target>パスワード(確認)</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password must be 6-12 characters.</source>
+        <target>パスワードは6～12文字の半角英数で入力してください。</target>
       </trans-unit>
 
     </body>

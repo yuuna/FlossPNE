@@ -36,6 +36,15 @@ class opMailRoute extends sfRoute
     if (is_null($this->member))
     {
       $config = Doctrine::getTable('MemberConfig')->retrieveByNameAndValue('mobile_address', $this->context['from_address']);
+      if (!$config)
+      {
+        $config = Doctrine::getTable('MemberConfig')->retrieveByNameAndValue('pc_address', $this->context['from_address']);
+      }
+      if (!$config)
+      {
+        $config = Doctrine::getTable('MemberConfig')->retrieveByNameAndValue('smartphone_address', $this->context['from_address']);
+      }
+
       if ($config)
       {
         $this->member = $config->getMember();

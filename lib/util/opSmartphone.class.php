@@ -36,11 +36,22 @@ class opSmartphone
 
   public function isSmartphone()
   {
-    if (preg_match('/(iPhone)|(iPod)|(BlackBerry)|(Windows Phone)|(Symbian)|(Android)/', $_SERVER['HTTP_USER_AGENT']))
+    if (preg_match('/(iPhone)|(iPod)|(BlackBerry)|(Windows Phone)|(Symbian)|(Android)|(Emacs-w3m)/', $_SERVER['HTTP_USER_AGENT']))
     {
       return true;
     }
 
     return false;
   }
+
+  public function isAndroid()
+  {
+    if (preg_match('/Android/', $_SERVER['HTTP_USER_AGENT']))
+    {
+      return true;
+    }
+
+    return false;
+  }
+
 }
