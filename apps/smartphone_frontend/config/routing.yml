@@ -35,6 +35,19 @@ friend_showActivity:
   url: /friend/showActivity
   param: { module: friend, action: showActivity }
 
+friend_manage:
+  url: /friend/manage
+  param: { module: friend, action: manage }
+
+obj_friend_unlink:
+  url:     /friend/unlink/:id
+  class:   sfDoctrineRoute
+  options: { model: Member, type: object }
+  param:   { module: friend, action: unlink }
+  requirements:
+    id: \d+
+    sf_method: [get, post]
+
 error:
   url: /default/error
   param: { module: default, action: error }
@@ -52,7 +65,6 @@ member_profile:
 member_profile_mine:
   url:   /member/profile
   param:   { module: member, action: profile }
-
 
 ########
 #diary:
@@ -133,6 +145,22 @@ community_home:
     id:        \d+
     sf_method: [get]
 
+community_join:
+  url: /community/join
+  param: { module: community, action: join }
+
+community_joinlist:
+  url: /community/joinList
+  param: { module: community, action: joinlist }
+
+community_memberList:
+  url: /community/member/list
+  param: { module: community, action: memberList }
+
+community_quit:
+  url: /community/quit
+  param: { module: community, action: quit }
+
 communityTopic_show:
   url: /communityTopic/:id
   class: sfDoctrineRoute
@@ -181,4 +209,3 @@ about:
 #
 default:
   url:   /:module/:action/*
-

@@ -149,6 +149,10 @@
         <source>You don't have any friend.</source>
         <target>友人がいません。</target>
       </trans-unit>
+      <trans-unit id="">
+        <source>My Friend Setting</source>
+        <target>マイフレンド管理</target>
+      </trans-unit>
 
     </body>
   </file>
