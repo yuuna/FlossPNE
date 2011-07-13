@@ -156,6 +156,10 @@ community_joinlist:
   url: /community/joinList
   param: { module: community, action: joinlist }
 
+community_search:
+  url: /community/search
+  param: { module: community, action: search }
+
 community_memberList:
   url: /community/member/list
   param: { module: community, action: memberList }

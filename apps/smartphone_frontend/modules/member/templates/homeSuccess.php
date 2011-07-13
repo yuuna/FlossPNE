@@ -127,7 +127,7 @@ function footer()
       <li><?php echo link_to(__('Recently Posted Community Topics'), 'communityTopic/recentlyTopicList') ?></li>
       <li><?php echo link_to(__('Recently Posted Community Events'), 'communityEvent/recentlyEventList') ?></li>
       <li><?php echo link_to(__('My Communities'), 'community/joinlist?id='.$memberId) ?></li>
-      <li>(未)<?php echo link_to(__('Community search'), 'community/search') ?></li>
+      <li><?php echo link_to(__('Community search'), 'community/search') ?></li>
     </ul>
   </div>
 
