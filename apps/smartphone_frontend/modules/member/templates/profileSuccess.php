@@ -24,6 +24,7 @@
     <li>(未)<a href="#introduction">紹介文を書く</a></li>
 -->
     <li><?php echo link_to('メッセージを送る', 'message/sendToFriend?id='.$member->getId()) ?></li>
+    <li><?php echo link_to('フレンドに追加', 'friend/link?id='.$member->getId()) ?></li>
     </div>
   </div>
 </div>

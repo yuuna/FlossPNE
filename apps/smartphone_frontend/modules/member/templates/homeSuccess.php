@@ -10,6 +10,7 @@ function footer()
   return $footer;
 }
 ?>
+
 <div data-role="page" id="home">
   <div data-role="header" data-theme="b">
      <h1><?php echo opConfig::get('sns_name') ?></h1>
@@ -35,7 +36,18 @@ function footer()
   <?php echo footer() ?>
 </div><!-- page "home" -->
 
-
+<div data-roke="page" id="menu">
+  <nav data-role="navbar">
+    <ul>
+      <li><a href="#" class="ui-btn-active">First</a></li>
+      <li><a href="#">Second</a></li>
+      <li><a href="#">Third</a></li> 
+      <li><a href="#">Fourth</a></li>
+      <li><a href="#">Fifth</a></li>
+      <li><a href="#">Sixth</a></li>
+    </ul> 
+  </nav>
+</div>
 <div data-role="page" id="messages">
   <div data-role="header" data-theme="b">
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
