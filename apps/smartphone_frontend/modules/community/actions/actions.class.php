@@ -10,7 +10,7 @@
 class communityActions extends opCommunityAction
 {
  /**
-  * Executes joinlist action
+  * Executes joinList action
   *
   * @param sfRequest $request A request object
   */

@@ -39,6 +39,10 @@ friend_manage:
   url: /friend/manage
   param: { module: friend, action: manage }
 
+friend_show_image:
+  url: /friend/image
+  param: { module: friend, action: showImage }
+
 obj_friend_unlink:
   url:     /friend/unlink/:id
   class:   sfDoctrineRoute
@@ -167,6 +171,15 @@ community_memberList:
 community_quit:
   url: /community/quit
   param: { module: community, action: quit }
+
+community_edit:
+  url: /community/edit
+  param: { module: community, action: edit }
+
+community_delete:
+  url: /community/delete/:id
+  param: { module: community, action: delete }
+  requirements: { id: \d+ }
 
 communityTopic_show:
   url: /communityTopic/:id

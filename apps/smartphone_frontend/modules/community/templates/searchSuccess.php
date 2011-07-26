@@ -5,7 +5,7 @@ $options = array(
   'title'    => __('Search Community'),
   'url'      => url_for('@community_search'),
   'button'   => __('Search'),
-  'moreInfo' => array(link_to(__('Create a new community'))),
+  'moreInfo' => array(link_to(__('Create a new community'), '@community_edit')),
   'method'   => 'get'
 );
 
