@@ -9,9 +9,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css, jquery.mobile-1.0a4.1.min.css, smartphone.css]
+  stylesheets:    [main.css, jquery.mobile-1.0b1.min.css, smartphone.css]
 
-  javascripts:    [jquery-1.6.1.min.js, jquery.my-config.js, jquery.mobile-1.0a4.1.min.js, smart.js]
+  javascripts:    [jquery-1.6.1.min.js, jquery.my-config.js, jquery.mobile-1.0b1.min.js, smart.js]
 
   has_layout:     true
   layout:         layout
