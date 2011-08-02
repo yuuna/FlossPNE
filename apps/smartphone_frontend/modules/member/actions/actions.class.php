@@ -30,14 +30,12 @@ class memberActions extends opMemberAction
   public function executeHome($request)
   {
     $this->memberId = $this->getUser()->getMemberId();
-    $this->setLayout('layout0');
 
     return parent::executeHome($request);
   }
 
   public function executeProfile($request)
   {
-    $this->setLayout('layout0');
 
     return parent::executeProfile($request);
   }

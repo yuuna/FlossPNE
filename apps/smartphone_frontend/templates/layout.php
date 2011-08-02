@@ -11,29 +11,8 @@
   <?php include_javascripts() ?>
 </head>
 <body>
-<div data-role="page" data-url="<?php echo $_SERVER['REQUEST_URI'] ?>">
-  <div data-role="header" data-theme="b">
-    <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
-    <h1><?php include_slot('title') ?></h1>
-    <?php echo link_to('Home', '@homepage',
-            array('data-icon' => 'home',
-                  'data-iconpos' => 'notext',
-                  'data-direction' => 'reverse',
-                  'class' => 'ui-btn-right jqm-home',
-                  'data-theme' => 'b')) ?>
-  </div>
-
-  <div data-role="content">
-    <?php echo $sf_content ?>
-  </div>
-
-  <div data-role="footer">
-    <p align="right">
-      <?php echo link_to('プライバシーポリシー', 'default/privacyPolicy') ?>
-      <?php echo link_to('利用規約', 'default/userAgreement') ?>
-    </p>
-  </div>
-
-</div>
+<?php include_partial('global/header') ?>
+<?php echo $sf_content ?>
+<?php include_partial('global/footer') ?>
 </body>
 </html>

@@ -16,6 +16,5 @@ class aboutActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->setLayout('layout0');
   }
 }
