@@ -1,4 +1,3 @@
-<?php if (has_slot('title')): ?>
   <div data-role="header" data-theme="b">
     <a href="#" data-rel="back" data-icon="arrow-l" data-theme="b">戻る</a>
     <h1><?php include_slot('title') ?></h1>
@@ -10,4 +9,3 @@
                   'class' => 'ui-btn-right jqm-home',
                   'data-theme' => 'b')) ?> -->
   </div>
-<?php endif; ?>

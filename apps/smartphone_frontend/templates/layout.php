@@ -11,8 +11,14 @@
   <?php include_javascripts() ?>
 </head>
 <body>
+<?php if (has_slot('title')): ?>
 <?php include_partial('global/header') ?>
+<div data-role="content">
+<?php endif; ?>
 <?php echo $sf_content ?>
+<?php if (has_slot('title')): ?>
+</div>
 <?php include_partial('global/footer') ?>
+<?php endif; ?>
 </body>
 </html>
