@@ -30,6 +30,7 @@ class memberActions extends opMemberAction
   public function executeHome($request)
   {
     $this->memberId = $this->getUser()->getMemberId();
+    $this->activityPager = Doctrine::getTable('ActivityData')->getFriendActivityListPager(null, $page, $this->size);
 
     return parent::executeHome($request);
   }
