@@ -12,13 +12,16 @@
 </head>
 <body>
 <?php if (has_slot('title')): ?>
+<div data-role="page" id="singlepage">
 <?php include_partial('global/header') ?>
-<div data-role="content">
+  <div data-role="content">
 <?php endif; ?>
-<?php echo $sf_content ?>
+    <?php echo $sf_content ?>
 <?php if (has_slot('title')): ?>
-</div>
+  </div>
 <?php include_partial('global/footer') ?>
+</div>
 <?php endif; ?>
+<?php include_partial('global/menu') ?>
 </body>
 </html>
