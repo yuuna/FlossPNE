@@ -56,9 +56,8 @@ error:
   url: /default/error
   param: { module: default, action: error }
 
-
-member_profile:
-  url:   /member/:id
+obj_member_profile:
+  url:     /member/:id
   class:   opDynamicAclRoute
   options: { model: Member, type: object, privilege: view }
   param:   { module: member, action: profile }
@@ -180,6 +179,10 @@ community_delete:
   url: /community/delete/:id
   param: { module: community, action: delete }
   requirements: { id: \d+ }
+
+community_memberManage:
+  url: /community/member/manage
+  param: { module: community, action: memberManage }
 
 communityTopic_show:
   url: /communityTopic/:id
