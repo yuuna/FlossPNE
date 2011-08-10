@@ -34,9 +34,8 @@ $options->setDefault('url', $sf_request->getCurrentUri());
 <?php endif; ?>
 
 <?php $hasRequiredField = false ?>
-
+<div data-role="fieldcontain">
 <?php slot('form_table') ?>
-<table>
 <?php include_customizes($id, 'firstRow') ?>
 <?php echo $options->getRaw('firstRow') ?>
 
@@ -99,9 +98,7 @@ if ($options['mark_required_field']
 <?php endforeach; ?>
 <?php echo $options->getRaw('lastRow') ?>
 <?php include_customizes($id, 'lastRow') ?>
-</table>
 <?php end_slot(); ?>
-
 <?php if ($hasRequiredField): ?>
 <?php echo __('%0% is required field.', array('%0%' => '<strong>*</strong>')) ?>
 <?php endif; ?>
@@ -109,7 +106,7 @@ if ($options['mark_required_field']
 <?php include_slot('form_table') ?>
 
 <div class="operation">
-<ul class="moreInfo button">
+<ul class="moreInfo button" data-role="listview">
 <li>
 <?php foreach($forms as $form): echo $form->renderHiddenFields(); endforeach; ?>
 <input type="submit" class="input_submit" value="<?php echo $options['button'] ?>" />

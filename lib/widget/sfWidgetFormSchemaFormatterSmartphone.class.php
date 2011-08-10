@@ -15,11 +15,13 @@
  * @subpackage widget
  * @author     Tozuka <tozuka@tejimaya.com>
  */
-class sfWidgetFormSchemaFormatterSmartphone extends sfWidgetFormSchemaFormatterMobile
+class sfWidgetFormSchemaFormatterSmartphone extends opWidgetFormSchemaFormatter
 {
-/*
   protected
-    $helpFormat            = '<div class="help">%help%</div>',
-    $errorListFormatInARow = "  <div class=\"error\"><ul class=\"error_list\">\n%errors%  </ul></div>\n";
-*/
+    $rowFormat                 = "%label%\n%field%%help%%hidden_fields%%error%",
+    $errorListFormatInARow    =  '%errors%',
+    $helpFormat                = '%help%',
+    $errorRowFormatInARow      = "<br>%error%\n",
+    $namedErrorRowFormatInARow = "<br>%name%: %error%\n",
+    $decoratorFormat           = "<div data-role=\"fieldcontain\">\n  %content%</div>";
 }

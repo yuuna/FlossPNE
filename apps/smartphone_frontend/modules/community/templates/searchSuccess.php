@@ -11,7 +11,8 @@ $options = array(
 
 op_include_form('searchCommunity', $filters, $options);
 ?>
-
+</div>
+<div data-role="content">
 
 <?php if ($pager->getNbResults()): ?>
 

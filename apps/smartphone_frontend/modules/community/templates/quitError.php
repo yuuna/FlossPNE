@@ -1,4 +1,4 @@
-<?php slot('title', __('Error') ?>
+<?php slot('title', __('Error')) ?>
 
 <?php if ($isAdmin): ?>
 <?php $body =  __('The administrator doesn\'t leave the community.') ?>
