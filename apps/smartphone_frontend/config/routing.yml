@@ -22,6 +22,18 @@ member_logout:
   url: /logout
   param: { module: member, action: logout }
 
+member_search:
+  url: /member/search
+  param: { module: member, action: search }
+
+member_profile:
+  url:   /member/:id
+  class:   opDynamicAclRoute
+  options: { model: Member, type: object, privilege: view }
+  param:   { module: member, action: profile }
+  requirements:
+    id:        \d+
+    sf_method: [get]
 
 friend_list:
   url: /friend/list
