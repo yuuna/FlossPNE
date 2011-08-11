@@ -4,12 +4,16 @@
 <?php foreach ($pager->getResults() as $activityData): ?>
 <?php $uri = $activityData->getUri(); ?>
   <li>
-    <?php if ($uri) echo '<a href="'.url_for($uri).'">' ?>
+    <?php if ($uri): ?>
+    <?php echo '<a href="'.url_for($uri).'">' ?>
+    <?php else: echo '<a href="#">' ?>
+    <?php endif; ?>
     <?php echo op_image_tag_sf_image($activityData->Member->getImageFileName(), array('size' => '76x76')) ?>
-    <p class="ui-li-aside"><?php echo substr($activityData->getCreatedAt(),11) ?></p>
+    <!-- <p><?php echo substr($activityData->getCreatedAt(),11) ?></p> -->
     <h4><?php echo $activityData->Member->getName() ?>:</h4>
     <p><?php echo __($activityData->getBody()) ?></p>
-    <?php if ($uri) echo '</a>' ?>
+    <?php echo '</a>' ?>
+    <?php echo link_to(__('Delete'), 'member/deleteActivity?id='.$activityData->getId(), array('title' => 'delete activity')) ?>
   </li>
 <?php endforeach ?>
 </ul>
