@@ -35,6 +35,10 @@ member_profile:
     id:        \d+
     sf_method: [get]
 
+member_editProfile:
+  url: /member/edit/profile
+  param: { module: member, action: editProfile }
+
 friend_list:
   url: /friend/list
   param: { module: friend, action: list }
