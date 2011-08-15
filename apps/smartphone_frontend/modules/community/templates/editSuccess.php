@@ -1,3 +1,4 @@
+<?php slot('title', __('Create a new %community%')) ?>
 <?php
 $options = array(
   'isMultipart' => true,

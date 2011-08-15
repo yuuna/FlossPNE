@@ -1,3 +1,4 @@
+<?php slot('title', __('')) ?>
 <?php
 $form = new BaseForm();
 op_include_parts('yesNo', 'deleteConfirmForm', array(

@@ -1,4 +1,4 @@
-<?php slot('title', __(' Community Members')) ?>
+<?php slot('title', __('%community% Members', array('%community%' => $op_term['community']->titleize()))) ?>
 
 <ul data-role="listview">
 <?php foreach ($pager->getResults() as $member): ?>

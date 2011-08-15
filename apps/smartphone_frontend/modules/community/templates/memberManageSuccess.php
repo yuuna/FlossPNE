@@ -1,4 +1,4 @@
-<?php slot('title', 'メンバー管理') ?>
+<?php slot('title', 'Management member') ?>
 <div data-role="collapsible-set">
 <?php foreach ($pager->getResults() as $member) : ?>
   <div data-role="collapsible">

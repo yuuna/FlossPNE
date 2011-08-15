@@ -1,4 +1,4 @@
-<?php slot('title', __('My Communities')) ?>
+<?php slot('title', __('%community% List')) ?>
 
 <ul data-role="listview">
 <?php foreach ($pager->getResults() as $community): ?>
