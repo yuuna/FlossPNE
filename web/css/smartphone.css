@@ -39,3 +39,15 @@
  padding-bottom: 5px;
  padding-right: 5px;
 }
+
+.margin-top-21{
+ padding-top: 21px;
+
+}
+
+.ui-grid-a h3{
+    font-size:18px;
+    line-height:1;
+    text-align:justify;
+    font-weight:bold; 
+}
